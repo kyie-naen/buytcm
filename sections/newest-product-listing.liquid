@@ -1,0 +1,59 @@
+<section class="container space-section">
+    <div class="row">
+        <div class="col-12 bg-newest-product-header text-center">
+            <h3 class="text-white">{{ 'general.index.newest-text' | t }}</h3>
+            <p class="text-white">{{ 'general.index.newest-subtext' | t }}</p>
+        </div>
+    </div>
+    <div class="row mt-4">
+        {% assign products = collections['all'].products |  sort: 'created_at' | reverse %}
+        {% assign filtered_count = 0 %}
+        {% for product in products %}
+            {% unless product.tags contains 'b2b' %}
+                {% if filtered_count < 4 %}
+                    <div class="col-6 col-lg-3 d-flex align-items-stretch mb-3 padding-baru">
+                        {% render 'product-card', 
+                        title: product.title,
+                        url: product.url,
+                        price: product.price,
+                        image: product.featured_image
+                        product: product,
+                        varian: product.variants.first.id
+                        %}
+                    </div>
+                    {% assign filtered_count = filtered_count | plus: 1 %}
+                {% endif %}
+            {% endunless %}
+        {% endfor %}
+    </div>
+</section>
+
+{% style %}
+    .bg-newest-product-header{
+        background: url({{  'ginseng-2-scaled.jpg' |  asset_url }});
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 6rem;
+    }
+
+    @media (max-width: 576px) {
+        .bg-newest-product-header{
+            padding: 3rem;
+        }
+    }
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "newest-product-listing",
+    "settings": [],
+    "presets": [
+        {
+            "name": "newest-product-listing"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,8 @@
+<div class="news-card">
+    <div class="img-zoom">
+        <img loading="lazy" class="img-fluid" src="{{ image | img_url: 'grande' }}" alt="{{title}}" />
+    </div>
+    <p class="text-date pt-2">{{ tanggal | date: "%B %d, %Y" }}</p>
+    <h2 class="mb-3"><a href="{{ url }}">{{ title }}</a></h2>
+    <p>{{ desc | truncatewords: 20 }}</p>
+</div>

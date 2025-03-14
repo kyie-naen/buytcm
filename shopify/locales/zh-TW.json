@@ -1,0 +1,176 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+    "general": {
+        "all": {
+            "about-us": "關於我們",
+            "quick-view": "快速檢視",
+            "sign-up": "註冊",
+            "home": "首頁"
+        },
+        "register": {
+            "text": "註冊",
+            "create-account": "建立帳戶",
+            "subtitle-create-account": "解鎖量身打造的精彩體驗。註冊快速又簡單，立即獲取專屬會員福利。"
+        },
+        "login": {
+            "text": "帳戶",
+            "login": "登入",
+            "subtitle-login": "透過今日登入，解鎖便利與量身打造的精彩體驗。您的旅程從這裡開始。"
+        },
+        "account": {
+            "title": "歡迎 {{ name }}!",
+            "account-details": "帳戶詳情",
+            "no-order-history": "您尚未下任何訂單",
+            "start-shopping": "開始購物",
+            "order-history": "訂單歷史",
+            "order-id": "訂單編號",
+            "date": "日期",
+            "tracking-number": "追踪編號",
+            "order-status": "訂單狀態",
+            "total": "總計"
+        },
+        "index": {
+            "heritage-text": "傳統中醫文化",
+            "heritage-subtext": "歡迎來到 Heritage TCM，您的首選線上目的地，提供天然健康產品和補充品，包括優質的傳統中醫藥及草本萃取產品。我們以賦能個人及企業為願景，致力於提供種類繁多且品質卓越的產品，以滿足全球不同人群的健康需求。",
+            "heritage-text-one": "針對企業客戶",
+            "heritage-subtext-one": "認識到健康與養生領域企業的獨特需求，我們提供強大的B2B服務。無論您經營的是小型健康食品店、大型零售連鎖，還是醫療診所，我們的企業對企業解決方案都能根據您的特定需求量身定制。",
+            "heritage-text-two": "我們對品質與安全的承諾",
+            "heritage-subtext-two": "品質是我們一切工作的核心。我們確保所有產品都符合嚴格的品質控制標準，並來自可靠的供應商。安全至關重要，我們不遺餘力地確保我們銷售的所有產品都是安全、有效且品質卓越的。",
+            "heritage-text-three": "可持續性與倫理",
+            "heritage-subtext-three": "可持續性和倫理實踐是我們運營的基礎。我們致力於通過像是環保包裝和支持可持續農業方法等措施，來減少我們對環境的影響。",
+            "best-product-text": "最佳產品銷售商",
+            "best-product-subtext": "發現一系列量身定制的護膚解決方案，專為滿足您的特定需求而設計。",
+            "best-product-button": "所有產品",
+            "newest-text": "傳統中醫文化",
+            "newest-subtext": "我們精心策劃的網站展示了一系列獨特且有效的天然補充品。每一款產品，特別是我們的傳統中醫和草本萃取物，均來自天然草本萃取，體現了大自然治療效益的精髓。我們獨特的健康理念根植於傳統醫學的整體原則，通過將大自然的滋養精髓與現代科學方法結合，優化身心健康。",
+            "founder-who": "阮是什麼人",
+            "founder-text": "創辦人",
+            "founder-details": "張賢哲先生是中國醫藥大學中醫學系的教授。佇雲林縣溪頭鄉出世，伊畢業於中國醫藥大學藥學系。服兵役後，伊返校擔任助理教授、講師、副教授，直到升做教授。",
+            "blog-text": "健康美麗的秘訣"
+        },
+        "products": {
+          "add-to-cart": "將商品加入購物車"  ,
+          "ingredients": "成分",
+          "how-to-use": "使用方法",
+          "you-also-like": "您也喜歡"
+        },
+        "cart": {
+            "cart-text": "購物車",
+            "item": "項目",
+            "subtotal": "小計",
+            "no-item": "購物車中沒有項目",
+            "text-tax": "稅金和運費將在結帳時計算",
+            "view-cart": "查看購物車"
+        },
+        "checkout": {
+            "shopping-cart": "購物車",
+            "product": "產品",
+            "price": "價格",
+            "qty": "數量",
+            "total": "總計",
+            "subtotal": "小計",
+            "checkout": "結帳"
+        },
+        "footer": {
+            "coloumn-text-one": "幫助顧客",
+            "coloumn-subtext-one_html": "揣一個離你最近的位置，減少運費，<br>讓購物變得更方便。",
+            "coloumn-text-two": "阮的公司",
+            "coloumn-text-three": "發現",
+            "coloumn-text-four": "專屬的福利",
+            "coloumn-subtext-four_html": "註冊即可享有首次購物九折優惠並免運費。<br>隨時更新促銷與優惠資訊。"
+        }
+    },
+    "page": {
+        "about-us": {
+            "title": "關於我們",
+            "description": "張憲哲先生是中國醫藥大學中醫系的教授。他出生於雲林縣茨投鄉，畢業於中國醫藥大學藥學系。完成軍事服役後，他回到母校，先後擔任助理教授、講師、副教授，最終成為教授。",
+            "sub-title": "我們的歷史",
+            "sub-title-2": "我們的使命",
+            "paragraph-1": "黃河與洛河是中華民族最早興起和繁榮的地方；來自洛陽的《河圖》和《洛書》是中國古代文明與文化的最早典籍與來源。台灣人民的傳承與對河洛理念的堅守，其實源自於黃河與洛河地區的“河洛”人，而非“福建”或“福佬”人。所傳承並流傳的語言是“河洛方言”。隨著朝代更迭以及五胡南遷，這些傳統來到台灣。在敬仰先祖的精神下，透過世代相傳，傳統中醫藥的挑選、分級、書寫與製備的正統做法得以保存超過兩千年。這份傳承保持了中華文化傳統的純粹本質，未受時間變遷或政治局勢的影響而改變。",
+            "paragraph-2": "張憲哲教授一生致力於中醫藥的傳承，花費數十年走訪台灣各地的中藥商。他將傳統從業者的古老且高品質的藥材鑑定知識，結合其在中國醫藥大學45年的實踐教學經驗，建立了一個寶貴的資料庫。利用當時高度先進的相機，他精心拍攝這些珍稀藥材的細節，通過照片記錄下這段歷史。",
+            "paragraph-3": "這部精心製作的作品《正宗藥材圖解指南》，以數據為基礎、視覺化且具教育性，讓每個人都能學習中醫大師傳承下來的寶貴藥材鑑定知識。它確保了中醫藥的延續，並為河洛藥文化留下了見證。",
+            "paragraph-4": "《河洛藥典》的目的是呈現張憲哲教授一生的心血之作《正宗藥材圖解指南》，這部作品可與李時珍的《本草綱目》相比，作為一部記錄所有藥材的現代傑作。這份寶貴的資源已在網站上提供公眾使用。最適合的使用者包括：",
+            "paragraph-5": "河洛藥典》與《正宗藥材圖解指南》。內容豐富，是學習藥材的絕佳資源。搜尋功能簡單易用，藥材識別變得更為高效。這份在世界中醫藥領域無與倫比的數位藥材館，值得推廣以促進公共健康。",
+            "paragraph-6": "在 Heritage TCM，我們的使命很明確：幫助您過上更健康的生活。我們相信，最佳健康的基石在於獲得適當的營養和天然產品。無論您是想提升自身福祉的個人，還是尋求可靠批發選擇的企業，我們都努力讓卓越的健康產品變得普及可得。",
+            "list-1": "初學者於中醫、學生、中醫從業者",
+            "list-2": "健康與養生愛好者、患者、一般大眾",
+            "list-3": "臨床中醫從業者、藥師、中醫銷售專業人士、研究人員與學者",
+            "list-4": "製藥研究人員、生技產品開發者、自然療法從業者、草藥配方研究單位、替代療法與藥物技術研發機構。"
+        },
+        "shipping": {
+            "title": "運送與退貨",
+            "description": "Sit amet, consectetur adipiscing elit. Integer molestie vehicula massa, eu venenatis elit venenatis eu. Aenean eu augue sed turpis mollis tristique. Praesent a efficitur tortor, et vehicula orci. Aenean vehicula ex id diam pharetra tempus. Praesent at fringilla augue. Cras tincidunt rhoncus tortor et faucibus. Duis nec bibendum sem, ut vulputate tellus. Cras mattis, ligula a faucibus faucibus, turpis elit tincidunt sem, ut vestibulum neque dui sit amet nisi. Class aptent taciti",
+            "subtitle1": "運送",
+            "subtitle1-1": "Lorem ipsum dolor",
+            "text1-1": "Sit amet, consectetur adipiscing elit. Integer molestie vehicula massa, eu venenatis elit venenatis eu. Aenean eu augue sed turpis mollis tristique. Praesent a efficitur tortor, et vehicula orci. Aenean vehicula ex id diam pharetra tempus. Praesent at fringilla augue. Cras tincidunt rhoncus tortor et faucibus. Duis nec bibendum sem, ut vulputate tellus. Cras mattis, ligula a faucibus faucibus, turpis elit tincidunt sem, ut vestibulum neque dui sit amet nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas orci sapien, cursus nec tristique viverra, condimentum sit amet ipsum. Mauris sed arcu vel diam rutrum luctus sed nec nibh. In lorem ipsum, ultrices a feugiat vel, fringilla at quam. Nulla auctor risus non diam luctus tristique.",
+            "subtitle1-2": "Sed eget lectus ut elit",
+            "text1-2": "Faucibus imperdiet at at magna. Aenean ultricies nulla nec convallis scelerisque. Donec sed commodo mauris. Nam eu mi consequat, porta felis luctus, tempus risus. Pellentesque luctus ex vitae elit bibendum feugiat vel sed ipsum. Nulla porttitor laoreet augue in iaculis. Mauris lacinia commodo quam id tincidunt. Pellentesque vestibulum eget risus ut ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam eu velit maximus, cursus dolor eu, venenatis ipsum. Donec semper sem at lectus fringilla, eu auctor purus consequat. Nullam augue nisi, cursus eget porta nec, pulvinar et lectus. Integer quis ex eget est vestibulum vestibulum. Praesent nec mollis lacus. Pellentesque semper orci ut purus consequat hendrerit. Cras eget bibendum nisi, quis tincidunt massa.",
+            "subtitle2": "退貨",
+            "subtitle2-1": "Lorem ipsum dolor",
+            "text2-1": "Sit amet, consectetur adipiscing elit. Integer molestie vehicula massa, eu venenatis elit venenatis eu. Aenean eu augue sed turpis mollis tristique. Praesent a efficitur tortor, et vehicula orci. Aenean vehicula ex id diam pharetra tempus. Praesent at fringilla augue. Cras tincidunt rhoncus tortor et faucibus. Duis nec bibendum sem, ut vulputate tellus. Cras mattis, ligula a faucibus faucibus, turpis elit tincidunt sem, ut vestibulum neque dui sit amet nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas orci sapien, cursus nec tristique viverra, condimentum sit amet ipsum. Mauris sed arcu vel diam rutrum luctus sed nec nibh. In lorem ipsum, ultrices a feugiat vel, fringilla at quam. Nulla auctor risus non diam luctus tristique.",
+            "subtitle2-2": "Sed eget lectus ut elit",
+            "text2-2": "Faucibus imperdiet at at magna. Aenean ultricies nulla nec convallis scelerisque. Donec sed commodo mauris. Nam eu mi consequat, porta felis luctus, tempus risus. Pellentesque luctus ex vitae elit bibendum feugiat vel sed ipsum. Nulla porttitor laoreet augue in iaculis. Mauris lacinia commodo quam id tincidunt. Pellentesque vestibulum eget risus ut ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam eu velit maximus, cursus dolor eu, venenatis ipsum. Donec semper sem at lectus fringilla, eu auctor purus consequat. Nullam augue nisi, cursus eget porta nec, pulvinar et lectus. Integer quis ex eget est vestibulum vestibulum. Praesent nec mollis lacus. Pellentesque semper orci ut purus consequat hendrerit. Cras eget bibendum nisi, quis tincidunt massa.",
+            "subtitle3": "Lorem ipsum dolor",
+            "text3": "Sit amet, consectetur adipiscing elit. Integer molestie vehicula massa, eu venenatis elit venenatis eu. Aenean eu augue sed turpis mollis tristique. Praesent a efficitur tortor, et vehicula orci. Aenean vehicula ex id diam pharetra tempus. Praesent at fringilla augue. Cras tincidunt rhoncus tortor et faucibus. Duis nec bibendum sem, ut vulputate tellus. Cras mattis, ligula a faucibus faucibus, turpis elit tincidunt sem, ut vestibulum neque dui sit amet nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas orci sapien, cursus nec tristique viverra, condimentum sit amet ipsum. Mauris sed arcu vel diam rutrum luctus sed nec nibh. In lorem ipsum, ultrices a feugiat vel, fringilla at quam. Nulla auctor risus non diam luctus tristique.",
+            "subtitle4": "Sed eget lectus ut elit",
+            "text4": "Faucibus imperdiet at at magna. Aenean ultricies nulla nec convallis scelerisque. Donec sed commodo mauris. Nam eu mi consequat, porta felis luctus, tempus risus. Pellentesque luctus ex vitae elit bibendum feugiat vel sed ipsum. Nulla porttitor laoreet augue in iaculis. Mauris lacinia commodo quam id tincidunt. Pellentesque vestibulum eget risus ut ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam eu velit maximus, cursus dolor eu, venenatis ipsum. Donec semper sem at lectus fringilla, eu auctor purus consequat. Nullam augue nisi, cursus eget porta nec, pulvinar et lectus. Integer quis ex eget est vestibulum vestibulum. Praesent nec mollis lacus. Pellentesque semper orci ut purus consequat hendrerit. Cras eget bibendum nisi, quis tincidunt massa.",
+        },
+        "contact": {
+            "title": "聯絡",
+            "description": "Sit amet, consectetur adipiscing elit. Integer molestie vehicula massa, eu venenatis elit venenatis eu. Aenean eu augue sed turpis mollis tristique. Praesent a efficitur tortor, et vehicula orci. Aenean vehicula ex id diam pharetra tempus.",
+            "subtitle": "聯絡我們",
+            "subtitle-text": "請注意，並非所有號碼都可供所有行動電話網路使用或覆蓋。此外，請留意我們可能會監控或錄音您的通訊內容，用於培訓和品質控制目的。",
+            "first-name": "您的名字",
+            "last-name": "您的姓氏",
+            "email": "您的電子郵件地址",
+            "message": "您的訊息",
+            "send": "發送"
+        },
+        "coba": {
+            "title": "dasda"
+        },
+        "privacy": {
+            "title": "Privacy Policy",
+            "description": "Welcome to BuyTCM! We are committed to protecting your privacy while providing the best possible service. This Privacy Policy explains how we collect, use, and safeguard your personal information so that you can feel confident shopping with us",
+            "sub-title": "Please Read Carefully",
+            "sub-title-1": "Who is it for?",
+            "paragraph-1": "This Privacy Policy applies to all visitors, customers, and users of the BuyTCM website. Whether you’re browsing our site, creating an account, or making a purchase, this policy outlines how your personal information is handled. <br> You can always find the latest version of our Privacy Policy on our website. If you're subscribed to our newsletter, we'll notify you via email about any updates to our Privacy Policy.",
+            "sub-title-2": "What data is collected?",
+            "paragraph-2": "At BuyTCM, we collect information to streamline your shopping experience and make it even more enjoyable. This includes details like your name, email address, shipping address, and payment information when you place an order. We may also gather information about how you use our website, such as pages you visit or items you add to your cart, to improve our website, personalize your experience, and share updates or special offers you might like. We also collect certain details to comply with legal obligations, like keeping accurate records or preventing fraud. Rest assured, we only collect what’s necessary and always handle your information with care.",
+            "sub-title-3": "What data is shared?",
+            "paragraph-3": "We only share your personal information with trusted third parties when it’s necessary to provide our services. For example, we may share your shipping address with delivery companies to ensure your order arrives on time, or your payment details with secure payment processors to complete your purchase. In some cases, we may need to share information to comply with legal requirements or prevent fraud. However, we want to be clear—your data is never sold or rented. Our priority is protecting your privacy while ensuring a seamless shopping experience.",
+            "sub-title-4": "How is data protected?",
+            "paragraph-4": "Protecting your personal information is a top priority at BuyTCM. We use industry-standard security measures, such as encryption and secure servers, to keep your data safe from unauthorized access. Access to your data is strictly limited to team members and trusted partners who need it to provide our services. To stay ahead of potential risks, we regularly review and update our data protection practices to ensure we’re using the best security methods available. <br> We store your data securely for as long as necessary to provide our services and comply with legal requirements. If you request the deletion of your data, or if it's no longer needed for our purposes, we will remove it in a safe and timely manner.",
+            "sub-title-5": "What can I do with my data?",
+            "paragraph-5": "You have full control over your data. You can request a copy of the information we have about you to review and update it at any time. If you prefer that we no longer keep your data, we can delete it upon request. You can opt out of marketing communications whenever you like by updating your preferences or contacting us directly. We’re here to support your rights and ensure simple and transparent data management.",
+            "sub-title-6": "What about cookies?",
+            "paragraph-6": "We use cookies and tracking technologies to improve your experience on our website. They help us remember your preferences, keep track of items in your cart, and analyze how our site is being used so we can make it better. You have complete control over cookies and can adjust your settings anytime through your browser. We respect your choices and aim to provide a smooth and personalized shopping experience.",
+            "sub-title-7": "How are international users protected?",
+            "paragraph-7": "We are committed to providing you with the best data protection, no matter where you are in the world. We ensure that your data is handled in accordance with local and international data protection laws. As we are based in New York, USA, we comply with United States data protection laws and relevant international laws. We follow strict security measures to protect your information during storage and transfer, including using encryption and secure servers, in compliance with all applicable privacy regulations.",
+            "sub-title-8": "How are minors protected?",
+            "paragraph-8": "We take the privacy and safety of minors seriously. Our products are not intended for purchase by children, and we require that users under the age of 18 use our website with the involvement of a parent or guardian. If you are a minor, your guardian should be actively involved in managing your account and overseeing any transaction to safeguard your privacy while using our site.",
+            "sub-title-9": "Who can I contact if I have further questions?",
+            "paragraph-9": "If you have any questions or concerns, feel free to reach out to us at info@buytcm.com and we'll be happy to assist you. Our team is here to ensure your safe and pleasant shopping experience with BuyTCM."
+        }
+    },
+    "sections": {
+        "hero-slider": {
+            "settings": {
+                "text1": {
+                    "default": "健康與美容必需品，讓你看起來美麗又感覺舒適"
+                },
+                "textbutton1": {
+                    "default": "查看系列"
+                }
+            }
+        }
+    }
+}

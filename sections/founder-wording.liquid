@@ -1,0 +1,36 @@
+<section>
+    <div class="container-fluid px-0 bg-green space-section">
+        <div class="row">
+            <div class="col-md-6 my-auto py-4">
+                <div class="container container-half container-half-md-left">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="{{'founder.png' |  asset_url}}" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="col-10 my-auto">
+                            <p class="m-0">{{ 'general.index.founder-who' | t }}</p>
+                            <h3>{{ 'general.index.founder-text' | t }}</h3>
+                        </div>
+                    </div>
+                    <p class="my-3">{{ 'general.index.founder-details' | t }}</p>
+                    <a href="{{ pages['about-us'].url }}" class="btn btn-primary">{{ 'general.all.about-us' | t }}</a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <img src="{{'swapnil-dwivedi-mK2fnT6frE0-unsplash.jpg' |  asset_url}}" class="img-block" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name": "founder-wording",
+    "settings": [],
+    "presets": [
+        {
+            "name": "founder-wording"
+        }
+    ]
+}
+{% endschema %}

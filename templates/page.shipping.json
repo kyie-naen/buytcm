@@ -1,0 +1,19 @@
+{
+    "sections": {
+        "page-title-about": {
+            "type": "page-title-one",
+            "settings": {
+                "title": "page.shipping.title",
+                "description": "page.shipping.description",
+            }
+        },
+        "main": {
+            "type": "main-shipping",
+            "settings": {}
+        }
+    },
+    "order": [
+      "page-title-about",
+      "main"
+    ]
+}

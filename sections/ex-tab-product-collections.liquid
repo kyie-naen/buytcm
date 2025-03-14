@@ -1,0 +1,30 @@
+<section class="container py-5">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        {% for collection in collections %}
+            <li class="nav-item" role="presentation">
+                <button class="nav-link {% if collection.title == 'Kids' %}active{% endif %}" id="pills-{{collection.id}}-tab" data-bs-toggle="pill" data-bs-target="#pills-{{collection.id}}" type="button" role="tab" aria-controls="pills-{{collection.id}}" aria-selected="true">{{collection.title}}</button>
+            </li>
+        {% endfor %}
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        {% for collection in collections %}
+            <div class="tab-pane fade {% if collection.title == 'Kids' %}show active{% endif %}" id="pills-{{collection.id}}" role="tabpanel" aria-labelledby="pills-{{collection.id}}-tab">
+                {% assign collection_handle = collection.title %}
+                {% for product in collections[collection_handle].products %}
+                    <h3>{{ product.title | link_to: product.url }}</h3>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</section>
+{% schema %}
+{
+    "name": "Tab Product Collections",
+    "settings": [],
+    "presets": [
+        {
+            "name": "tab-product-collections"
+        }
+    ]
+}
+{% endschema %}

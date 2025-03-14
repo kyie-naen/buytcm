@@ -1,0 +1,52 @@
+<section class="container">
+    <div class="row">
+        <div class="col-lg-2">
+            <div class="d-none d-sm-block mb-5">
+                <h5>Collections</h5>
+                <hr>
+                <ul class="m-0 p-0">
+                    {% for collection in collections %}
+                        {% if collection.title != 'Best Seller' %}
+                            <li><a href="{{collection.url}}">{{collection.title}}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                {% render 'product-filter' %}
+            </div>
+        </div>
+        <div class="col-lg-10 pb-5">
+            {% paginate collection.products by 12 %}
+            <div class="row">
+                {% for product in collection.products %}
+                    {% unless product.tags contains 'b2b' %}
+                    <div class="col-lg-3 pb-4 col-6 d-flex align-items-stretch">
+                        {% render 'product-card', 
+                        title: product.title,
+                        url: product.url,
+                        price: product.price,
+                        image: product.featured_image
+                        product: product,
+                        varian: product.variants.first.id
+                        %}
+                    </div>
+                    {% endunless %}
+                {% endfor %}
+            </div>
+            <div class="paginate">
+                {{- paginate | default_pagination -}}
+            </div>
+            {% endpaginate %}
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name": "main-collection",
+    "settings": [],
+    "presets": [
+        {
+            "name": "main-collection"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,97 @@
+<section class="container py-5">
+    <div class="row">
+        <div class="col-12 page-title">
+            {% comment %} {% render 'breadcrumb-custom', title: page.title %} {% endcomment %}
+             {% assign title = 'general.login.text' | t %}
+             {% render 'breadcrumb-custom', title: title %}
+        </div>
+        <h3 class="mt-5 mb-5">{{ 'general.account.title' | t: name: customer.first_name }}</h3>
+        <div class="col-lg-2">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-order-tab" data-bs-toggle="pill" data-bs-target="#v-pills-order" type="button" role="tab" aria-controls="v-pills-order" aria-selected="true">Order</button>
+                {% if customer.tags contains 'gold' %}
+                    <button class="nav-link" id="v-pills-referral-tab" data-bs-toggle="pill" data-bs-target="#v-pills-referral" type="button" role="tab" aria-controls="v-pills-referral" aria-selected="false">Referral</button>
+                {% endif %}
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Address</button>
+                <a  href="{{ routes.account_logout_url }}" class="nav-link text-center">Logout</a>
+            </div>
+        </div>
+        <div class="col-lg-10">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-order" role="tabpanel" aria-labelledby="v-pills-order-tab" tabindex="0">
+                    {% if customer.orders_count == 0 %}
+                        <h2>{{ 'general.account.no-order-history' | t }}</h2>
+                        <a class="btn btn-primary" href="{{ routes.all_products_collection_url }}">{{ 'general.account.start-shopping' | t }}</a>
+                    {% else %}
+                        <h5>{{ 'general.account.order-history' | t }}</h5>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <td>{{ 'general.account.order-id' | t }}</td>
+                                    <td>{{ 'general.account.date' | t }}</td>
+                                    <td>{{ 'general.account.order-status' | t }}</td>
+                                    <td>{{ 'general.account.tracking-number' | t }}</td>
+                                    <td>{{ 'general.account.total' | t }}</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                        {% paginate customer.orders by 10 %}
+                            {% for order in customer.orders %}
+                                <tr>
+                                    <td>{{ order.order_number }}</td>
+                                    <td>{{ order.created_at | date: "%b %d, %Y" }}</td>
+                                    <td>{{ order.fulfillment_status_label }}</td>
+                                    <td>
+                                        {% if order.line_items.first.fulfillment.tracking_number == blank %}
+                                            -
+                                        {% else %}
+                                            {{ order.line_items.first.fulfillment.tracking_number }}
+                                        {% endif %}
+                                    </td>
+                                    <td>{{ order.total_price | money }}</td>
+                                </tr>
+                            {% endfor %}
+                            {{ paginate | default_pagination }}
+                        {% endpaginate %}
+                            </tbody>
+                        </table>
+                    {% endif %}
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                    {% if customer.default_address %}
+                        <h5>{{ 'general.account.order-history' | t }}</h5>
+                        <p>{{ customer.default_address.address1 }}</p>
+                      
+                        {% if customer.default_address.address2 != blank %}
+                          <p>{{ customer.default_address.address2 }}</p>
+                        {% endif %}
+                      
+                        <p>{{ customer.default_address.city }}, {% if customer.default_address.province_code %}{{ customer.default_address.province_code }}{% endif %}, {{ customer.default_address.country_code }}
+                        <p>{{ customer.default_address.zip_code }}</p>
+                        <p>{{ customer.default_address.phone }}</p>
+                    {% endif %}
+                </div>
+                {% if customer.tags contains 'gold' %}
+                <div class="tab-pane fade" id="v-pills-referral" role="tabpanel" aria-labelledby="v-pills-referral-tab" tabindex="0">
+                    <h5>Your Referral Code:</h5>
+                    <h3 id="tcmCode">TCM-8721322213692</h3>
+                    <button class="btn btn-primary" onclick="copyToClipboard()">Copy</button>
+                </div>
+                {% endif %}
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% schema %}
+{
+    "name": "main-account",
+    "settings": [],
+    "presets": [
+        {
+            "name": "main-account"
+        }
+    ]
+}
+{% endschema %}

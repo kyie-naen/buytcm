@@ -1,0 +1,36 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12">
+            <h2>{{ 'general.index.blog-text' | t }}</h2>
+        </div>
+    </div>
+    <div class="row mt-4">
+        {% for blog in blogs.news.articles limit:3 %}
+            {% if forloop.length > 0 %}
+                <div class="col-lg-4 col-6">
+                    {% render 'news-card',
+                    title: blog.title,
+                    url: blog.url,
+                    image: blog.image.src,
+                    tanggal: blog.published_at,
+                    desc: blog.content
+                    %}
+                </div>
+            {% else %}
+                <h3>No Blog Today—But Stay Tuned!</h3>
+            {% endif %}
+            
+        {% endfor %}
+    </div>
+</div>
+{% schema %}
+{
+    "name": "newest-blog",
+    "settings": [],
+    "presets": [
+        {
+            "name": "newest-blog"
+        }
+    ]
+}
+{% endschema %}

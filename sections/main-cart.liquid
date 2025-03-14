@@ -1,0 +1,143 @@
+<section class="container py-5 container-cart">
+    <div class="row">
+        <div class="col-12">
+            <div class="text-center">
+                <h1 class="display-5 fw-bolder">{{ 'general.checkout.shopping-cart' | t  }}</h1>
+            </div>
+        </div>
+    </div>
+    <form action="{{ routes.cart_url }}" method="post" class="list-cart-items">
+    <div class="row mt-5 d-none d-md-block">
+        <div class="col-12">
+            <div class="d-none d-sm-block">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                         {{ 'general.checkout.product' | t }}
+                    </div>
+                    <div class="col-md-2">
+                        <p class="text-center m-0"> {{ 'general.checkout.price' | t }}</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="text-center m-0">{{ 'general.checkout.qty' | t }}</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="text-center m-0">{{ 'general.checkout.total' | t }}</p>
+                    </div>
+                </div>
+            </div>
+                <hr>
+                    {% for item in cart.items %}
+                        <div class="row cart-page align-items-center mb-3">
+                            <div class="col-md-3 col-6">
+                                <div class="bg img-cart"  style="background: url({{item.image |  image_url }});">
+
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="{{item.url}}">{{item.title}}</a>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-center m-0">{{item.original_price | money}}</p>
+                            </div>
+                            <div class="col-md-2">
+                                {% comment %} <p class="text-center m-0">{{item.quantity}}</p> {% endcomment %}
+                                {% render 'input-no-plus-minus-cart',
+                                    key: item.key 
+                                    quantity: item.quantity %}
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-center m-0">{{item.original_line_price | money}}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+            <hr>
+        </div>
+    </div>
+    <div class="row mt-5 d-sm-block d-md-none">
+        <div class="col-12">
+            {% for item in cart.items %}
+                <div class="row cart-page">
+                    <div class="col-6">
+                        <img src="{{item.image |  image_url }}" alt="{{item.title}}" class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <h6>{{item.title}}</h6>
+                        <p>{{item.original_price | money}} x {{item.quantity}}</p>
+                        {% render 'input-no-plus-minus-cart',
+                                    key: item.key 
+                                    quantity: item.quantity %}
+                        <p class="mt-4"><b>{{item.original_line_price | money}}</b></p>
+                    </div>
+                </div>
+                <hr>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 col-md-10">
+            <h4>{{ 'general.checkout.subtotal' | t }}</h4>
+        </div>
+        <div class="d-grid gap-3 col-md-2 col-6">
+            <h6 class="text-center">{{cart.total_price | money}}</h6>
+            <button class="btn btn-primary" name="checkout" type="submit">{{ 'general.checkout.checkout' | t }}</button>
+        </div>
+    </div>
+    </form>
+</section>
+
+{% comment %} {% if customer == null %}
+    <script>
+      window.location.href = "/account/login";
+    </script>
+{% endif %} {% endcomment %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        console.log('jQuery document is ready!');
+
+          $(document).on('click', '.input-cart-checkout button', async function(e) {
+                e.preventDefault();
+                let fieldName = $(this).attr('data-field');
+                let type = $(this).attr('data-type');
+                
+                let input = $(this).closest('.input-cart-checkout').find("input[name='"+fieldName+"']");
+                let currentVal = parseInt(input.val());
+                let minValue = parseInt(input.attr('min'));
+                let maxValue = parseInt(input.attr('max'));
+                let hasil = 0;
+                // Mendapatkan key
+                const key = $(this).closest('.cart-page').find('input[type=hidden]').val();
+
+                if (type === 'minus') {
+                    hasil = currentVal - 1;
+                    if (hasil >= minValue) {
+                        input.val(hasil);
+                        console.log(hasil);
+                        await updateCart(key, hasil);
+                    }
+                } else {
+                    hasil = currentVal + 1;
+                    if (hasil <= maxValue) {
+                        input.val(hasil);
+                        console.log(hasil);
+                        await updateCart(key, hasil);
+                    }
+                }
+        
+                getNewCart();
+                await updateCartPage();
+            })
+    });
+</script>
+
+{% schema %}
+{
+    "name": "Main Cart",
+    "settings": [],
+    "presets": [
+        {
+            "name": "main-cart"
+        }
+    ]
+}
+{% endschema %}

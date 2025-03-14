@@ -1,0 +1,49 @@
+<section class="container py-5">
+    <div class="row">
+        <div class="col-12">
+            <h2>{{ 'general.products.you-also-like' | t }}</h2>
+        </div>
+    </div>
+    <div class="row related-product">
+        {% for product in recommendations.products %}
+            <div class="col-lg-3 col-6 mb-3 d-flex align-items-stretch">
+                {% render 'product-card', 
+                    title: product.title,
+                    url: product.url,
+                    price: product.price,
+                    image: product.featured_image
+                    product: product,
+                    varian: product.variants.first.id
+                    %}
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+<script>
+    const productRecommendationsSection = document.querySelector('.related-product');
+
+    fetch(window.Shopify.routes.root + "recommendations/products?product_id={{product.id}}&limit=4&section_id=related-product&intent=related")
+    .then(response => response.text())
+    .then((text) => {
+        const html = document.createElement('div');
+        html.innerHTML = text;
+
+        const recommendations = html.querySelector('.related-product');
+
+        if (recommendations && recommendations.innerHTML.trim().length) {
+            productRecommendationsSection.innerHTML = recommendations.innerHTML;
+        }
+    });
+</script>
+{% schema %}
+{
+    "name": "related-product",
+    "settings": [],
+    "presets": [
+        {
+            "name": "related-product"
+        }
+    ]
+}
+{% endschema %}

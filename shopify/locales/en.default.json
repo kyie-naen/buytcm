@@ -1,0 +1,173 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+    "general": {
+        "all": {
+            "about-us": "About Us",
+            "quick-view": "Quick View",
+            "sign-up": "Sign Up",
+            "home": "Home"
+        },
+        "register": {
+            "text": "Register",
+            "create-account": "Create Account",
+            "subtitle-create-account": "Unlock a world of tailored experiences. Registering is quick and easy, granting you access to member-only perks."
+        },
+        "login": {
+            "text": "Account",
+            "login": "Login",
+            "subtitle-login": "Unlock a world of convenience and tailored experiences by logging in today. Your journey begins here."
+        },
+        "account": {
+            "title": "Welcome {{ name }}!",
+            "account-details": "Account Details",
+            "no-order-history": "You haven't placed any orders yet",
+            "start-shopping": "Start Shopping",
+            "order-history": "Order History",
+            "order-id": "Order ID",
+            "date": "Date",
+            "tracking-number": "Tracking Number",
+            "order-status": "Order Status",
+            "total": "Total"
+        },
+        "index": {
+            "heritage-text": "Heritage TCM",
+            "heritage-subtext": "Welcome to Heritage TCM, your premier online destination for natural health products and supplements, including a premium selection of traditional Chinese medicine (TCM) and herbal extract products. Launched with a vision to empower individuals and businesses alike, we are committed to delivering an expansive selection of top-quality products that cater to the diverse health needs of people around the globe.",
+            "heritage-text-one": "For business customers",
+            "heritage-subtext-one": "Recognizing the unique needs of businesses in the health and wellness sector, we provide robust B2B services. Whether you operate a small health food shop, a major retail chain, or a medical practice, our business-to-business solutions are tailored to support your specific requirements.",
+            "heritage-text-two": "Our Commitment to Quality and Safety",
+            "heritage-subtext-two": "Quality is at the heart of everything we do. We ensure that all our products comply with strict quality control standards and are sourced from reputable suppliers. Safety is paramount, and we go above and beyond to ensure that all items we sell are safe, effective, and of the highest quality.",
+            "heritage-text-three": "Sustainability and Ethics",
+            "heritage-subtext-three": "Sustainability and ethical practices are fundamental to our operations. We are dedicated to reducing our environmental footprint through initiatives like eco-friendly packaging and supporting sustainable agricultural methods.",
+            "best-product-text": "Best Products Seller",
+            "best-product-subtext": "Discover a range of skincare solutions tailored to meet your specific needs.",
+            "best-product-button": "All Products",
+            "newest-text": "Heritage Traditional Chinese Medicine",
+            "newest-subtext": "Our carefully curated website features a unique and effective array of the best in natural supplements. Each product, especially our TCM and herbal extracts, is crafted from natural herb extracts and embodies the essence of nature’s healing benefits. Our unique approach to health is grounded in the holistic principles of traditional medicine, optimizing well-being by blending the nurturing essence of nature with modern scientific methods.",
+            "founder-who": "Who We Are",
+            "founder-text": "Founder",
+            "founder-details": "Mr. Zhang Xianzhe is a professor at the Department of Traditional Chinese Medicine at China Medical University. Born in Citou Township, Yunlin County, he graduated from the Department of Pharmacy at China Medical University. After completing his military service, he returned to the university as an assistant professor, lecturer, associate professor, and eventually, professor.",
+            "blog-text": "Healthy and Beauty Tips"
+        },
+        "products": {
+          "add-to-cart": "Add to cart",
+          "ingredients": "Ingredients",
+          "how-to-use": "How to use",
+          "you-also-like": "You also like"
+        },
+        "cart": {
+            "cart-text": "Cart",
+            "item": "item",
+            "subtotal": "Subtotal",
+            "no-item": "There is no item in cart",
+            "text-tax": "Taxes and shipping calculated at checkout",
+            "view-cart": "View Cart"
+        },
+        "checkout": {
+            "shopping-cart": "Shopping Cart",
+            "product": "Product",
+            "price": "Price",
+            "qty": "Qty",
+            "total": "Total",
+            "subtotal": "Subtotal",
+            "checkout": "Checkout"
+        },
+        "footer": {
+            "coloumn-text-one": "Help Customers",
+            "coloumn-subtext-one_html": "Find a location nearest you to reduce shipping costs <br>and make shopping easier.",
+            "coloumn-text-two": "Our Company",
+            "coloumn-text-three": "Discover",
+            "coloumn-text-four": "Exclusive Benefits",
+            "coloumn-subtext-four_html": "Sign up for 10% off your first purchase and free shipping.<br>Updates information on sales and offers.",
+        }
+    },
+    "page": {
+        "privacy": {
+            "title": "Privacy Policy",
+            "description": "Welcome to BuyTCM! We are committed to protecting your privacy while providing the best possible service. This Privacy Policy explains how we collect, use, and safeguard your personal information so that you can feel confident shopping with us",
+            "sub-title": "Please Read Carefully",
+            "sub-title-1": "Who is it for?",
+            "paragraph-1": "This Privacy Policy applies to all visitors, customers, and users of the BuyTCM website. Whether you’re browsing our site, creating an account, or making a purchase, this policy outlines how your personal information is handled. <br> You can always find the latest version of our Privacy Policy on our website. If you're subscribed to our newsletter, we'll notify you via email about any updates to our Privacy Policy.",
+            "sub-title-2": "What data is collected?",
+            "paragraph-2": "At BuyTCM, we collect information to streamline your shopping experience and make it even more enjoyable. This includes details like your name, email address, shipping address, and payment information when you place an order. We may also gather information about how you use our website, such as pages you visit or items you add to your cart, to improve our website, personalize your experience, and share updates or special offers you might like. We also collect certain details to comply with legal obligations, like keeping accurate records or preventing fraud. Rest assured, we only collect what’s necessary and always handle your information with care.",
+            "sub-title-3": "What data is shared?",
+            "paragraph-3": "We only share your personal information with trusted third parties when it’s necessary to provide our services. For example, we may share your shipping address with delivery companies to ensure your order arrives on time, or your payment details with secure payment processors to complete your purchase. In some cases, we may need to share information to comply with legal requirements or prevent fraud. However, we want to be clear—your data is never sold or rented. Our priority is protecting your privacy while ensuring a seamless shopping experience.",
+            "sub-title-4": "How is data protected?",
+            "paragraph-4": "Protecting your personal information is a top priority at BuyTCM. We use industry-standard security measures, such as encryption and secure servers, to keep your data safe from unauthorized access. Access to your data is strictly limited to team members and trusted partners who need it to provide our services. To stay ahead of potential risks, we regularly review and update our data protection practices to ensure we’re using the best security methods available. <br> We store your data securely for as long as necessary to provide our services and comply with legal requirements. If you request the deletion of your data, or if it's no longer needed for our purposes, we will remove it in a safe and timely manner.",
+            "sub-title-5": "What can I do with my data?",
+            "paragraph-5": "You have full control over your data. You can request a copy of the information we have about you to review and update it at any time. If you prefer that we no longer keep your data, we can delete it upon request. You can opt out of marketing communications whenever you like by updating your preferences or contacting us directly. We’re here to support your rights and ensure simple and transparent data management.",
+            "sub-title-6": "What about cookies?",
+            "paragraph-6": "We use cookies and tracking technologies to improve your experience on our website. They help us remember your preferences, keep track of items in your cart, and analyze how our site is being used so we can make it better. You have complete control over cookies and can adjust your settings anytime through your browser. We respect your choices and aim to provide a smooth and personalized shopping experience.",
+            "sub-title-7": "How are international users protected?",
+            "paragraph-7": "We are committed to providing you with the best data protection, no matter where you are in the world. We ensure that your data is handled in accordance with local and international data protection laws. As we are based in New York, USA, we comply with United States data protection laws and relevant international laws. We follow strict security measures to protect your information during storage and transfer, including using encryption and secure servers, in compliance with all applicable privacy regulations.",
+            "sub-title-8": "How are minors protected?",
+            "paragraph-8": "We take the privacy and safety of minors seriously. Our products are not intended for purchase by children, and we require that users under the age of 18 use our website with the involvement of a parent or guardian. If you are a minor, your guardian should be actively involved in managing your account and overseeing any transaction to safeguard your privacy while using our site.",
+            "sub-title-9": "Who can I contact if I have further questions?",
+            "paragraph-9": "If you have any questions or concerns, feel free to reach out to us at info@buytcm.com and we'll be happy to assist you. Our team is here to ensure your safe and pleasant shopping experience with BuyTCM."
+        },
+        "about-us": {
+            "title": "About Us",
+            "description": "Mr. Zhang Xianzhe is a professor at the Department of Traditional Chinese Medicine at China Medical University. Born in Citou Township, Yunlin County, he graduated from the Department of Pharmacy at China Medical University. After completing his military service, he returned to the university as an assistant professor, lecturer, associate professor, and eventually, professor.",
+            "sub-title": "Our History",
+            "sub-title-2": "Our Mission",
+            "paragraph-1": "The Yellow River and Luo River are the earliest places of rise and prosperity for the Chinese nation; the ‘He Tu’ and ‘Luo Shu’ from Luoyang are the earliest books and sources of ancient Chinese civilization and culture. The Taiwanese people’s heritage and adherence to the concept of He Luo actually come from the ‘He Luo’ people from the Yellow River and Luo River regions, not from the ‘Hokkien’ or ‘Fujian’ people. The language passed down and circulated is ‘He Luo’ dialect. Through changes in dynasties and generations, and following the migration south during the Five Barbarians’ invasion, the traditions came to Taiwan. With reverence for the past, passed down from father to son, the authentic practices of selecting, grading, writing, and preparing traditional Chinese medicine have been preserved for over two thousand years. This heritage maintains the pure essence of Chinese cultural traditions, unaffected by the changes of time or political situations.",
+            "paragraph-2": "Professor Zhang Xianzhe, who has devoted his life to the inheritance of traditional Chinese medicine, spent decades visiting various traditional Chinese medicine merchants across Taiwan. He integrated the ancient and high-quality herbal identification knowledge of traditional practitioners into his 45 years of practical teaching experience at China Medical University, establishing a valuable database. Using a highly advanced camera of that time, he meticulously captured the details of these rare herbs, documenting history through his photographs .",
+            "paragraph-3": "This meticulously crafted work, The Illustrated Guide to Authentic Medicinal Herbs, which is data-driven, visual, and educational, allows everyone to learn the valuable herb identification knowledge passed down by traditional Chinese medicine masters. It ensures the continuation of traditional Chinese medicine and leaves a testament to the Hu Luo medicinal culture.",
+            "paragraph-4": "The purpose of the ‘Hu Luo Pharmacopoeia’ is to present Professor Zhang Xian-zhe’s lifetime work, The Illustrated Guide to Authentic Medicinal Herbs, which can be compared to Li Shizhen’s comprehensive herbal work, as a modern masterpiece documenting all herbal materials. This valuable resource is made available on the website for public access. The most suitable users include:",
+            "paragraph-5": "He-Luo Pharmacopoeia 與 Authentic Medicinal Herbs Illustrated Guide. The content is rich and serves as an excellent resource for learning about medicinal herbs. The search function is easy to use, and identifying herbs becomes much more efficient. This highly valuable digital herbarium, unparalleled in the world of herbal medicine, is worth promoting for the benefit of public health.",
+            "paragraph-6": "At Heritage TCM, our mission is clear: to help you lead a healthier life. We believe that the cornerstone of optimal health is access to the right nutrients and natural products. Whether you are an individual looking to enhance your well-being or a business seeking dependable wholesale options, we strive to make exceptional health products universally accessible.",
+            "list-1": "Beginners in Traditional Chinese Medicine, Students, Practitioners of Chinese Medicin",
+            "list-2": "Health and Wellness Enthusiasts, Patients, General Public",
+            "list-3": "Clinical TCM Practitioners, Pharmacists, TCM Sales Professionals, Researchers and Scholars",
+            "list-4": "Pharmaceutical Researchers, Biotech Product Developers, Natural Therapy Practitioners, Herbal Formulation Research Units, Alternative Therapy and Drug Technology R&D Institutions.",
+        },
+        "shipping": {
+            "title": "Shipping and Return",
+            "description": "Sit amet, consectetur adipiscing elit. Integer molestie vehicula massa, eu venenatis elit venenatis eu. Aenean eu augue sed turpis mollis tristique. Praesent a efficitur tortor, et vehicula orci. Aenean vehicula ex id diam pharetra tempus. Praesent at fringilla augue. Cras tincidunt rhoncus tortor et faucibus. Duis nec bibendum sem, ut vulputate tellus. Cras mattis, ligula a faucibus faucibus, turpis elit tincidunt sem, ut vestibulum neque dui sit amet nisi. Class aptent taciti",
+            "subtitle1": "Shipping",
+            "subtitle1-1": "Lorem ipsum dolor",
+            "text1-1": "Sit amet, consectetur adipiscing elit. Integer molestie vehicula massa, eu venenatis elit venenatis eu. Aenean eu augue sed turpis mollis tristique. Praesent a efficitur tortor, et vehicula orci. Aenean vehicula ex id diam pharetra tempus. Praesent at fringilla augue. Cras tincidunt rhoncus tortor et faucibus. Duis nec bibendum sem, ut vulputate tellus. Cras mattis, ligula a faucibus faucibus, turpis elit tincidunt sem, ut vestibulum neque dui sit amet nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas orci sapien, cursus nec tristique viverra, condimentum sit amet ipsum. Mauris sed arcu vel diam rutrum luctus sed nec nibh. In lorem ipsum, ultrices a feugiat vel, fringilla at quam. Nulla auctor risus non diam luctus tristique.",
+            "subtitle1-2": "Sed eget lectus ut elit",
+            "text1-2": "Faucibus imperdiet at at magna. Aenean ultricies nulla nec convallis scelerisque. Donec sed commodo mauris. Nam eu mi consequat, porta felis luctus, tempus risus. Pellentesque luctus ex vitae elit bibendum feugiat vel sed ipsum. Nulla porttitor laoreet augue in iaculis. Mauris lacinia commodo quam id tincidunt. Pellentesque vestibulum eget risus ut ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam eu velit maximus, cursus dolor eu, venenatis ipsum. Donec semper sem at lectus fringilla, eu auctor purus consequat. Nullam augue nisi, cursus eget porta nec, pulvinar et lectus. Integer quis ex eget est vestibulum vestibulum. Praesent nec mollis lacus. Pellentesque semper orci ut purus consequat hendrerit. Cras eget bibendum nisi, quis tincidunt massa.",
+            "subtitle2": "Return",
+            "subtitle2-1": "Lorem ipsum dolor",
+            "text2-1": "Sit amet, consectetur adipiscing elit. Integer molestie vehicula massa, eu venenatis elit venenatis eu. Aenean eu augue sed turpis mollis tristique. Praesent a efficitur tortor, et vehicula orci. Aenean vehicula ex id diam pharetra tempus. Praesent at fringilla augue. Cras tincidunt rhoncus tortor et faucibus. Duis nec bibendum sem, ut vulputate tellus. Cras mattis, ligula a faucibus faucibus, turpis elit tincidunt sem, ut vestibulum neque dui sit amet nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas orci sapien, cursus nec tristique viverra, condimentum sit amet ipsum. Mauris sed arcu vel diam rutrum luctus sed nec nibh. In lorem ipsum, ultrices a feugiat vel, fringilla at quam. Nulla auctor risus non diam luctus tristique.",
+            "subtitle2-2": "Sed eget lectus ut elit",
+            "text2-2": "Faucibus imperdiet at at magna. Aenean ultricies nulla nec convallis scelerisque. Donec sed commodo mauris. Nam eu mi consequat, porta felis luctus, tempus risus. Pellentesque luctus ex vitae elit bibendum feugiat vel sed ipsum. Nulla porttitor laoreet augue in iaculis. Mauris lacinia commodo quam id tincidunt. Pellentesque vestibulum eget risus ut ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam eu velit maximus, cursus dolor eu, venenatis ipsum. Donec semper sem at lectus fringilla, eu auctor purus consequat. Nullam augue nisi, cursus eget porta nec, pulvinar et lectus. Integer quis ex eget est vestibulum vestibulum. Praesent nec mollis lacus. Pellentesque semper orci ut purus consequat hendrerit. Cras eget bibendum nisi, quis tincidunt massa.",
+            "subtitle3": "Lorem ipsum dolor",
+            "text3": "Sit amet, consectetur adipiscing elit. Integer molestie vehicula massa, eu venenatis elit venenatis eu. Aenean eu augue sed turpis mollis tristique. Praesent a efficitur tortor, et vehicula orci. Aenean vehicula ex id diam pharetra tempus. Praesent at fringilla augue. Cras tincidunt rhoncus tortor et faucibus. Duis nec bibendum sem, ut vulputate tellus. Cras mattis, ligula a faucibus faucibus, turpis elit tincidunt sem, ut vestibulum neque dui sit amet nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas orci sapien, cursus nec tristique viverra, condimentum sit amet ipsum. Mauris sed arcu vel diam rutrum luctus sed nec nibh. In lorem ipsum, ultrices a feugiat vel, fringilla at quam. Nulla auctor risus non diam luctus tristique.",
+            "subtitle4": "Sed eget lectus ut elit",
+            "text4": "Faucibus imperdiet at at magna. Aenean ultricies nulla nec convallis scelerisque. Donec sed commodo mauris. Nam eu mi consequat, porta felis luctus, tempus risus. Pellentesque luctus ex vitae elit bibendum feugiat vel sed ipsum. Nulla porttitor laoreet augue in iaculis. Mauris lacinia commodo quam id tincidunt. Pellentesque vestibulum eget risus ut ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam eu velit maximus, cursus dolor eu, venenatis ipsum. Donec semper sem at lectus fringilla, eu auctor purus consequat. Nullam augue nisi, cursus eget porta nec, pulvinar et lectus. Integer quis ex eget est vestibulum vestibulum. Praesent nec mollis lacus. Pellentesque semper orci ut purus consequat hendrerit. Cras eget bibendum nisi, quis tincidunt massa.",
+        },
+        "contact": {
+            "title": "Contact",
+            "description": "Sit amet, consectetur adipiscing elit. Integer molestie vehicula massa, eu venenatis elit venenatis eu. Aenean eu augue sed turpis mollis tristique. Praesent a efficitur tortor, et vehicula orci. Aenean vehicula ex id diam pharetra tempus.",
+            "subtitle": "Contact Us",
+            "subtitle-text": "Kindly note that not all numbers may be accessible or covered by all mobile phone networks. Please also be mindful that we may monitor or record your communications for training and quality control purposes",
+            "first-name": "Your First Name",
+            "last-name": "Your Last Name",
+            "email": "Your Email Address",
+            "message": "Your Message",
+            "send": "Send"
+        }
+    },
+    "sections": {
+        "hero-slider": {
+            "settings": {
+                "text1": {
+                    "default": "Health & beauty essentials to look and feel amazing"
+                },
+                "textbutton1": {
+                    "default": "View Collection"
+                }
+            }
+        }
+    }
+}

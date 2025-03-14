@@ -1,0 +1,88 @@
+<form class="mt-4">
+    {% for filter in collection.filters %}
+        <h5>{{ filter.label }}</h5>
+        <hr>      
+        {% case filter.type %}
+            {% when 'boolean' %}
+                <ul class="p-0">
+                    <li>
+                        <label for="Filter-{{ filter.param_name }}-{{ filter.true_value.value }}">
+                        <input type="checkbox"
+                            name="{{ filter.param_name }}"
+                            value="{{ filter.true_value.value }}"
+                            id="Filter-{{ filter.param_name }}"
+                            {% if filter.true_value.active -%}checked{%- endif %}
+                            {% if filter.true_value.count == 0 and filter.true_value.active == false -%}disabled{%- endif -%}
+                        >{{ filter.true_value.value }}</label>
+                    </li>
+                    <li>
+                        <label for="Filter-{{ filter.param_name }}-{{ filter.false_value.value }}">
+                        <input type="checkbox"
+                            name="{{ filter.param_name }}"
+                            value="{{ filter.false_value.value }}"
+                            id="Filter-{{ filter.param_name }}"
+                            {% if filter.false_value.active -%}checked{%- endif %}
+                            {% if filter.false_value.count == 0 and filter.false_value.active == false -%}disabled{%- endif %}
+                        >{{ filter.false_value.value }}</label>
+                    </li>
+                </ul>
+            {% when 'list' %}
+                <ul class="p-0">
+                {% for filter_value in filter.values %}
+                    <li>
+                        <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
+                        <input type="checkbox"
+                            name="{{ filter_value.param_name }}"
+                            value="{{ filter_value.value }}"
+                            id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
+                            {% if filter_value.active -%}checked{%- endif %}
+                            {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
+                        >
+                            <span>
+                            {%- case filter_value.display.type -%}
+                                {%- when 'colors' -%}
+                                {% liquid
+                                    assign size_limit = filter_value.display.value.size | at_most: 4
+                                    assign rotation = '0deg'
+                                    if size_limit == 2
+                                    assign rotation = '45deg'
+                                    endif
+
+                                    assign angle_increment = 360 | divided_by: size_limit
+                                    assign angle = 0
+                                %}
+                                {%- capture conic_gradient -%}
+                                    {%- for color in filter_value.display.value limit: size_limit -%}
+                                    {{ color }} {{ angle }}deg{%- assign angle = angle | plus: angle_increment %} {{ angle }}deg{%- unless forloop.last %}, {%- endunless -%}
+                                    {%- endfor -%}
+                                {%- endcapture -%}
+                                <span style="
+                                    width: 25px;
+                                    height: 25px;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background: conic-gradient({{ conic_gradient }}); transform: rotateZ({{ rotation }});
+                                "></span>
+                                {%- when 'image' -%}
+                                {{
+                                    filter_value.display.value
+                                    | image_url: width: 25
+                                    | image_tag: alt: filter_value.display.value.alt
+                                }}
+                                {%- else -%}
+                                <span class="visual-display__child"></span>
+                            {%- endcase -%}
+                            </span>
+                            {{ filter_value.value }}
+                        </label>
+                    </li>
+                {% endfor %}
+                </ul>
+                <div>
+              <input class="btn btn-primary" type="submit" value="Apply">
+            </div>
+        {% endcase %}
+    {% endfor %}
+</form>
