@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg ">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-lg-2 text-center text-lg-start order-sm-first">
+                <a class="navbar-brand m-0 d-none d-sm-block" href="{{ routes.root_url }}"><img class="img-fluid" width="60" height="60" src="{{ 'new_main_logo.png' |  asset_url}}" alt=""></a>
+                <a class="navbar-brand m-0 d-sm-block d-md-none" href="{{ routes.root_url }}"><img class="img-fluid" src="{{ 'new-main-logo-mobile.png' |  asset_url}}" alt=""></a>
+            </div>
+            <div class="col-4 col-lg-2 order-sm-last d-flex gap-lg-4 gap-2 justify-content-end">
+                {% render 'select-languages' %}
+                {% if customer %}
+                    <a href="{{ routes.account_url }}" class="my-auto">{% render 'icon-account' %}</a>
+                {% else %}
+                    <a href="{{ routes.account_login_url }}" class="my-auto">{% render 'icon-account' %}</a>
+                {% endif %}
+                <a class="position-relative my-auto" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    {% render 'icon-cart' %}<span class="cart-count position-absolute">0</span>
+                </a>
+            </div>
+            <div class="col-4 col-lg-8 order-first my-auto">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-center">
+                        <ul class="navbar-nav">
+                            {% for link in linklists['main-menu'].links %}
+                                <li class="nav-item">
+                                    <a class="nav-link {% if link.active %}active{% endif %}" href="{{link.url}}">{{link.title}}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</nav>
+
+{% schema %}
+{
+    "name": "Main Nav",
+    "settings": [],
+    "presets": [
+        {
+            "name": "main-nav"
+        }
+    ]
+}
+{% endschema %}

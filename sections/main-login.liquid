@@ -1,0 +1,60 @@
+<section class="container py-5">
+    <div class="row">
+        <div class="col-12 page-title mb-5">
+            {% comment %} {% render 'breadcrumb-custom', title: page.title %} {% endcomment %}
+             {% assign title = 'general.login.text' | t %}
+             {% render 'breadcrumb-custom', title: title %}
+        </div>
+        <div class="col-lg-5">
+            <h3>{{ 'general.login.login' | t }}</h3>
+            <p> {{ 'general.login.subtitle-login' | t }}</p>
+            {% form 'customer_login' %}
+                {{ form.errors | default_errors }}
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <input type="email" name="customer[email]" placeholder="E-mail" class="form-control py-3">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input type="password" name="customer[password]" placeholder="Password" class="form-control py-3">      
+                    </div>
+                </div>
+              
+                <div class="submit">
+                  <input type="submit" value="{{ 'general.login.login' | t }}" class="btn btn-primary">
+                </div>
+              {% endform %}
+              <p class="mt-5">Are you forgoting your password? <a class="text-underline" href="#" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Forgot Password</a></p>
+                {%  render 'forgotPassword' %}
+              <p class="mt-3">New Customer? <a class="text-underline" href="{{routes.account_register_url}}">Create Account</a></p>
+        </div>
+        <div class="col-lg-7 my-auto">
+              <img src="{{ 'ayurvedic-cosmetic-ubtan-face-hair-care-scaled.jpg' | asset_url }}" alt="ayurvedic-cosmetic-ubtan-face-hair-care-scaled.jpg" class="img-fluid">
+        </div>
+    </div>
+</section>
+<script>
+  // Cek jika pengguna berasal dari halaman keranjang
+  if (document.referrer.includes('/cart')) {
+    // Tambahkan input hidden secara dinamis ke form login
+    var form = document.querySelector('form[action="/account/login"]');
+    if (form) {
+      var input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = 'return_to';
+      input.value = '/cart';
+      form.appendChild(input);
+    }
+  }
+</script>
+
+{% schema %}
+{
+    "name": "main-register",
+    "settings": [],
+    "presets": [
+        {
+            "name": "main-register"
+        }
+    ]
+}
+{% endschema %}

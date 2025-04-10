@@ -1,0 +1,20 @@
+{
+    "sections": {
+        "page-title-about": {
+            "type": "page-title-one",
+            "settings": {
+                "title": "FAQs",
+                "description": "Sit amet, consectetur adipiscing elit. Integer molestie vehicula massa, eu venenatis elit venenatis eu. Aenean eu augue sed turpis mollis tristique. Praesent a efficitur tortor, et vehicula orci. Aenean vehicula ex id diam pharetra tempus. Praesent at fringilla augue. Cras tincidunt rhoncus tortor et faucibus. Duis nec bibendum sem, ut vulputate tellus. Cras mattis, ligula a faucibus faucibus, turpis elit tincidunt sem, ut vestibulum neque dui sit amet nisi. Class aptent taciti"
+            }
+        },
+        "main": {
+            "type": "main-faq",
+            "settings": {}
+        }
+    },
+    "order": [
+      "page-title-about",
+      "main"
+    ]
+}
+  

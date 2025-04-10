@@ -1,0 +1,54 @@
+<section class="container space-section">
+    <div class="row space-section">
+        <div class="col-lg-6">
+            <h3>{{ 'page.contact.subtitle' | t }}</h3>
+            <p>{{ 'page.contact.subtitle-text' | t }}</p>
+        </div>
+        <div class="col-lg-6">
+            {% form 'contact' %}
+                {{ form.errors | default_errors }}
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" name="contact[first_name]" id="first-name" class="form-control" placeholder="{{ 'page.contact.first-name' | t }}" />
+                    </div>
+                    <div class="col-6">
+                        <input type="text" name="contact[last_name]" id="last-name" class="form-control" placeholder="{{ 'page.contact.last-name' | t }}" />
+                    </div>
+                    <div class="col-12 mt-3">
+                        <input type="email" name="contact[email]" id="email" class="form-control" placeholder="{{ 'page.contact.email' | t }}" />
+                    </div>
+                    <div class="col-12 mt-3">
+                        <textarea name="contact[body]" id="message" class="form-control" placeholder="{{ 'page.contact.message' | t }}"></textarea>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="submit" value="{{ 'page.contact.send' | t }}" class="btn btn-primary mt-3" />
+                    </div>
+                </div>
+              {% endform %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div style="position: relative; width: 100%; padding-bottom: 56.25%; /* 16:9 Aspect Ratio */">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6061763798316!2d-73.9386968!3d40.748690499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2592a83a36599%3A0xa3f859bf6661e80b!2s2807%20Jackson%20Ave%2C%20Long%20Island%20City%2C%20NY%2011101%2C%20USA!5e0!3m2!1sen!2sid!4v1733976688085!5m2!1sen!2sid" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+    {
+        "name": "Main Contact",
+        "settings": [],
+        "presets": [
+            {
+                "name": "main-contact"
+            }
+        ]
+    }
+{% endschema %}

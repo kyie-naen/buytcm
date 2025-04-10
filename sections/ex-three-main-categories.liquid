@@ -1,0 +1,81 @@
+<section>
+    <div class="row d-block d-lg-flex">
+        <div class="col-md-4 bg-three-main-cat-1 bg-cover text-white text-center d-grid" style="min-height: 470px;">
+            <div class="my-auto">
+                <h1 class="mb-0">{{section.settings.text1}}</h1>
+            </div>
+        </div>
+
+        <div class="col-md-4 bg-three-main-cat-2 bg-cover text-white text-center d-grid">
+            <div class="my-auto">
+                <h1 class="mb-0">{{section.settings.text2}}</h1>
+            </div>
+        </div>
+
+        <div class="col-md-4 bg-three-main-cat-3 bg-cover text-white text-center d-grid">
+            <div class="my-auto">
+                <h1 class="mb-0">{{section.settings.text3}}</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .bg-three-main-cat-1{
+        background-image: url("{% if section.settings.image1 != blank %} {{ section.settings.image1 | image_url }} {% else %} {{ 'cover-1.jpg' |  asset_url }} {% endif %}");
+    }
+
+    .bg-three-main-cat-2{
+        background-image: url("{% if section.settings.image2 != blank %} {{ section.settings.image2 | image_url }} {% else %} {{ 'cover-1.jpg' |  asset_url }} {% endif %}");
+    }
+
+    .bg-three-main-cat-3{
+        background-image: url("{% if section.settings.image3 != blank %} {{ section.settings.image3 | image_url }} {% else %} {{ 'cover-1.jpg' |  asset_url }} {% endif %}");
+    }
+</style>
+
+{% schema %}
+{
+    "name": "Three Main Categories",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image1",
+            "label": "Upload Image 1",
+        },
+        {
+            "type": "text",
+            "id": "text1",
+            "label": "Heading for Image 1",
+            "default": "Women"
+        },
+        {
+            "type": "image_picker",
+            "id": "image2",
+            "label": "Upload Image 2",
+        },
+        {
+            "type": "text",
+            "id": "text2",
+            "label": "Heading for Image 2",
+            "default": "Men"
+        },
+        {
+            "type": "image_picker",
+            "id": "image3",
+            "label": "Upload Image 3",
+        },
+        {
+            "type": "text",
+            "id": "text3",
+            "label": "Heading for Image 3",
+            "default": "Kids"
+        }
+    ],
+    "presets": [
+        {
+            "name": "three-main-categories"
+        }
+    ]
+}
+{% endschema %}

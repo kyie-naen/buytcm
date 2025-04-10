@@ -1,0 +1,21 @@
+{
+    "sections": {
+        "page-title-about": {
+            "type": "page-title-one",
+            "settings": {
+                "title": "page.webinar.nephrologist.title",
+                "description": "page.webinar.nephrologist.description",
+                "image_hidden": "no"
+            }
+        },
+        "main": {
+            "type": "main-nephrologist",
+            "settings": {}
+        }
+    },
+    "order": [
+      "page-title-about",
+      "main"
+    ]
+}
+  

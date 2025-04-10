@@ -1,0 +1,93 @@
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body offcanvas-cart position-relative" style="overflow-x: hidden;">
+        <div class="row mb-4">
+            <div class="col-8 my-auto">
+                <h3 class="m-0">{{ 'general.cart.cart-text' | t }}</h3>
+            </div>
+            <div class="col-4 my-auto">
+                <p class="m-0 text-end"><span class="cart-count">{{cart.item_count}}</span> {{ 'general.cart.item' | t }}{% if cart.item_count > 1 %}s{% endif %}</p>
+            </div>
+        </div>
+            {% if cart.item_count == 0 %}
+                <h5>{{ 'general.cart.no-item' | t }}</h5>
+            {% else %}
+            <div id="main-cart-drawer">
+                {% for item in cart.items %}
+                    <div class="row mb-4 cart-drawer" style="padding: 0px 15px;">
+                        <div class="col-4 bg img-cart" style="background: url({{item.image |  image_url }});"></div>
+                        <div class="col-8">
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <p class="m-0"><a href="{{item.url}}">{{item.title}}</a></p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="m-0 item-price text-end">
+                                        {{ item.original_line_price | money }}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    {% render 'input-no-plus-minus-drawer',
+                                    key: item.key 
+                                    quantity: item.quantity %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+                <div class="d-grip gap-3 position-absolute" style="bottom: 0; width:100%; left:0;">
+                    <hr>
+
+                    <div class="row" style="padding: 0px 15px;">
+                        <div class="col-6">
+                            <h4>{{ 'general.cart.subtotal' | t }}</h4>
+                        </div>
+                        <div class="col-6">
+                            <h6 class="text-end">
+                                {% comment %} {% if customer.tags contains 'silver' %}
+                                    {% assign discount = cart.total_price | times: 0.05 %}
+                                    {% assign final_price = cart.total_price | minus: discount %}
+                                    {{ final_price | money }}
+                                {% elsif customer.tags contains 'gold' %}
+                                    {% assign discount = cart.total_price | times: 0.10 %}
+                                    {% assign final_price = cart.total_price | minus: discount %}
+                                    {{ final_price | money }}
+                                {% elsif customer.tags contains 'platinum' %}
+                                    {% assign discount = cart.total_price | times: 0.15 %}
+                                    {% assign final_price = cart.total_price | minus: discount %}
+                                    {{ final_price | money }}
+                                {% else %} {% endcomment %}
+                                    {{cart.total_price | money}}
+                                {% comment %} {% endif %} {% endcomment %}
+                            </h6>
+                        </div>
+                        <div class="col-12">
+                            <p>{{ 'general.cart.text-tax' | t }}</p>
+                        </div>
+                    </div>
+                    {% if template != 'cart' %}
+                        <div class="d-grid gap-1">
+                            <a class="btn-viewcart text-center" href="{{routes.cart_url}}">{{ 'general.cart.view-cart' | t }}</a>                    
+                        </div>
+                    {% endif %}
+                </div>
+            {% endif %}
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "off-canvas",
+    "settings": [],
+    "presets": [
+        {
+            "name": "off-canvas"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,24 @@
+<section class="container py-5 page-title">
+    <div class="row">
+        <div class="col-12">
+            {% render 'breadcrumb-custom', title:collection.title %}
+            <div class="text-title mt-5">
+                <h3>{{collection.title}}</h3>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <p>{{collection.description}}</p>
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name": "page-title-collection",
+    "settings": [],
+    "presets": [
+        {
+            "name": "page-title-collection"
+        }
+    ]
+}
+{% endschema %}

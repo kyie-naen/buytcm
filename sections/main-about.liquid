@@ -1,0 +1,64 @@
+<section class="container">
+    <div class="row">
+        <div class="col-12">
+            <h4 class="mb-3">{{ 'page.about-us.sub-title' | t }}</h4>
+            <p class="mb-4">{{ 'page.about-us.paragraph-1' | t }}</p>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-6">
+            <img loading="lazy" class="img-fluid" src="{{ 'chinese-herbs-scaled.jpg' |  asset_url }}">
+        </div>
+        <div class="col-6">
+            <img loading="lazy" class="img-fluid" src="{{ 'ayurvedic-cosmetic-ubtan-face-hair-care-scaled.jpg' |  asset_url }}">
+        </div>
+    </div>
+    <div class="col-12">
+        <h4 class="mb-3">{{ 'page.about-us.sub-title-2' | t }}</h4>
+        <p>{{ 'page.about-us.paragraph-2-1' | t }}</p>
+        <p class="mb-4">{{ 'page.about-us.paragraph-2-2' | t }}</p>
+    </div>
+    <div class="col-12">
+        <h4 class="mb-3">{{ 'page.about-us.sub-title-3' | t }}</h4>
+        <p>{{ 'page.about-us.paragraph-3-1' | t }}</p>
+        <p>{{ 'page.about-us.paragraph-3-2' | t }}</p>
+        <p class="mb-4">{{ 'page.about-us.paragraph-3-3' | t }}</p>
+    </div>
+    <div class="col-12">
+        <h4 class="mb-3">{{ 'page.about-us.sub-title-4' | t }}</h4>
+        <p class="mb-4">{{ 'page.about-us.paragraph-4' | t }}</p>
+        <ul style="list-style: auto;">
+            <li>
+                <u>{{'page.about-us.list-4-1-title' | t}}</u>
+                <p>{{'page.about-us.list-4-1-text' | t}}</p>
+            </li>
+            <li>
+                <u>{{'page.about-us.list-4-2-title' | t}}</u>
+                <p>{{'page.about-us.list-4-2-text' | t}}</p>
+            </li>
+            <li>
+                <u>{{'page.about-us.list-4-3-title' | t}}</u>
+                <p>{{'page.about-us.list-4-3-text' | t}}</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<style>
+    .bg-mission {
+        background: url({{ 'katherine-hanlon.jpg' | asset_url }});
+        padding: 6rem 0;
+    }
+</style>
+
+{% schema %}
+{
+    "name": "main-about",
+    "settings": [],
+    "presets": [
+        {
+            "name": "main-about"
+        }
+    ]
+}
+{% endschema %}

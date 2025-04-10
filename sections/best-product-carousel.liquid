@@ -1,0 +1,38 @@
+<section class="container space-section pe-lg-0">
+    <div class="row">
+        <div class="col-lg-3 my-auto">
+            <h2>{{ 'general.index.best-product-text' | t }}</h2>
+            <p>{{ 'general.index.best-product-subtext' | t }}</p>
+            <a href="{{routes.all_products_collection_url}}" class="btn btn-primary">{{ 'general.index.best-product-button' | t }}</a>
+        </div>
+        <div class="col-lg-9 mt-4">
+            <div class="slider1 row">
+                {% assign products = collections['best-seller'].products %}
+                {% for product in products limit:6 %}
+                    <div class="col-4 d-lg-flex align-items-stretch px-3">
+                        {% render 'product-card', 
+                        title: product.title,
+                        url: product.url,
+                        price: product.price,
+                        image: product.featured_image
+                        product: product,
+                        varian: product.variants.first.id
+                        %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "best-product-carousel",
+    "settings": [],
+    "presets": [
+        {
+            "name": "best-product-carousel"
+        }
+    ]
+}
+{% endschema %}

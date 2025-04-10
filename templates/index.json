@@ -1,0 +1,50 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+    "sections": {
+        "header-slider": {
+            "type": "hero-slider",
+            "settings": {}
+        },
+        "list-collections": {
+            "type": "list-collections",
+            "settings": {}
+        },
+        "introduce-heritage-tcm": {
+            "type": "introduce-heritage-tcm",
+            "settings": {}
+        },
+        "best-product-carousel": {
+            "type": "best-product-carousel",
+            "settings": {}
+        },
+        "newest-product-listing": {
+            "type": "newest-product-listing",
+            "settings": {}
+        },
+        "founder-wording": {
+            "type": "founder-wording",
+            "settings": {}
+        },
+        // "newest-blog": {
+        //     "type": "newest-blog",
+        //     "settings": {}
+        // }
+    },
+    "order": [
+        "header-slider",
+        "list-collections",
+        "introduce-heritage-tcm",
+        "best-product-carousel",
+        "newest-product-listing",
+        "founder-wording",
+        // "newest-blog"
+    ]
+}

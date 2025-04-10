@@ -1,0 +1,25 @@
+{
+    "sections": {
+        "page-title-about": {
+            "type": "page-title-one",
+            "settings": {
+                "title": "page.about-us.title",
+                "description": "page.about-us.description"
+            }
+        },
+        "main": {
+            "type": "main-about",
+            "settings": {}
+        },
+        "introduce-heritage-tcm": {
+            "type": "introduce-heritage-tcm",
+            "settings": {}
+        }
+    },
+    "order": [
+      "page-title-about",
+      "main",
+      "introduce-heritage-tcm"
+    ]
+}
+  

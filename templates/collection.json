@@ -1,0 +1,16 @@
+{
+    "sections": {
+        "page-title-collection": {
+            "type": "page-title-collection",
+            "settings": {}
+        },
+        "main": {
+            "type": "main-collection",
+            "settings": {}
+        }
+    },
+    "order": [
+        "page-title-collection",
+        "main"
+    ]
+}

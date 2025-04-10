@@ -1,0 +1,112 @@
+<footer class="container">
+    <div class="d-none d-sm-block">
+        <div class="d-flex flex-column flex-sm-row gap-5 justify-content-between">
+            <div class="flex-fill pb-4">
+                <h5>{{ 'general.footer.coloumn-text-one' | t }}</h5>
+                <p>{{ 'general.footer.coloumn-subtext-one_html' | t }}</p>
+                <p class="m-0"><a href="tel:+12172909900">+1 217-290-9900</a></p>
+                <p class="m-0"><a href="mailto:info@buytcm.com">info@buytcm.com</a></p>
+                <div class="d-flex gap-2 d-none d-sm-block">
+                    <a href="#"> {% render 'icon-x' %} </a>
+                    <a href="#"> {% render 'icon-ig' %} </a>
+                    <a href="#"> {% render 'icon-fb' %} </a>
+                </div>
+            </div>
+            <div class="flex-fill pb-4">
+                <h5>{{ 'general.footer.coloumn-text-two' | t }}</h5>
+                <ul>
+                    {% for link in linklists['company'].links %}
+                        <li><a href="{{link.url}}">{{ link.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="flex-fill pb-4">
+                <h5>{{ 'general.footer.coloumn-text-three' | t }}</h5>
+                <ul>
+                    {% for link in linklists['discover'].links %}
+                        <li><a href="{{link.url}}">{{link.title}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="flex-fill pb-4">
+                <h5>{{ 'general.footer.coloumn-text-four' | t }}</h5>
+                <p>{{ 'general.footer.coloumn-subtext-four_html' | t }}</p>
+                {% render 'brevo' %}
+            </div>
+        </div>
+    </div>
+    <div class="accordion d-sm-block d-md-none" id="accordionFooter">
+        <div class="d-flex gap-2 d-sm-block d-md-none">
+            <a href="#"> {% render 'icon-x' %} </a>
+            <a href="#"> {% render 'icon-ig' %} </a>
+            <a href="#"> {% render 'icon-fb' %} </a>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    {{ 'general.footer.coloumn-text-one' | t }}
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                <div class="accordion-body">
+                    <p>{{ 'general.footer.coloumn-subtext-one_html' | t }}</p>
+                    <p class="m-0"><a href="tel:+1 (973) 125-3638">+1 (973) 125-3638</a></p>
+                    <p class="m-0"><a href="mailto:info@buytcm.com">info@buytcm.com</a></p>
+                    <div class="d-flex gap-2">
+                        <a href="#"> {% render 'icon-x' %} </a>
+                        <a href="#"> {% render 'icon-ig' %} </a>
+                        <a href="#"> {% render 'icon-fb' %} </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    {{ 'general.footer.coloumn-text-two' | t }}
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                <div class="accordion-body">
+                    <ul>
+                        {% for link in linklists['company'].links %}
+                            <li><a href="{{link.url}}">{{ link.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    {{ 'general.footer.coloumn-text-three' | t }}
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                <div class="accordion-body">
+                    <ul>
+                        {% for link in linklists['discover'].links %}
+                            <li><a href="{{link.url}}">{{link.title}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-fill py-3 d-sm-block d-md-none">
+        <h6>{{ 'general.footer.coloumn-text-four' | t }}</h6>
+        <p>{{ 'general.footer.coloumn-subtext-four_html' | t }}</p>
+        {% render 'brevo' %}
+    </div>
+</footer>
+{% schema %}
+{
+    "name": "Footer",
+    "settings": [],
+    "presets": [
+        {
+            "name": "footer"
+        }
+    ]
+}
+{% endschema %}

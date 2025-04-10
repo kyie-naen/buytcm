@@ -1,0 +1,196 @@
+<style>
+    .product-card .accordion-button {
+        font-weight: 900;
+    }
+
+    .product-card .accordion {
+        --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/%3E%3C/svg%3E");
+        --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
+    }
+</style>
+<section class="container py-5 product-card">
+    <div class="row page-title">
+        <div class="col-12">
+            {% render 'breadcrumb-product', collection:product.collections[0].title, collection-url:product.collections[0].url, title:product.title %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-7">
+            {% render 'slick-product-carousel', images:product.images %}
+        </div>
+        {% comment %} left bar product {% endcomment %}
+        <div class="col-lg-5 mt-3 data-product">
+            {% for block in section.blocks %}
+                {%- case block.type -%}
+                    {%- when 'title' -%}
+                        <h1 class="pb-2" {{ block.shopify_attributes }}>{{product.title}}</h1>
+                        <div class="product-price">
+                            <h6 id="product-price">{{product.price | money}}</h6>
+                        </div>
+                    {%- when '@app' -%}
+                        {% render block %}
+                {% endcase %}
+            {% endfor %}
+            
+            <div class="excerpt-div mt-4">
+                <div id="excerpt">
+                    {{ product.description }}
+                </div>
+                <a id="toggle-btn" class="btn btn-link text-decoration-none">
+                    Read more
+                </a>
+            </div>
+
+            {% form 'product', product %}
+            <div class="row">
+                <div class="col-lg-4 col-6">
+                    <select name="id" id="product-variant" class="select-variant input-cart">
+                        {% for variant in product.variants %}
+                        <option value="{{variant.id}}" data-price="{{ variant.price | money }}">{{ variant.title }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-lg-4 col-6">
+                    {% render 'input-no-plus-minus-product' %}
+                </div>
+                <div class="col-lg-4 col-12">
+                    {% if customer == null %}
+                        <a href="{{routes.account_login_url}}" class="btn flex-shrink-0 add-to-cart-button w-100">
+                            {{ 'general.products.add-to-cart' | t }}
+                        </a>
+                    {% else %}
+                        <button class="btn flex-shrink-0 add-to-cart-button w-100" type="submit">
+                            {{ 'general.products.add-to-cart' | t }}
+                        </button>
+                    {% endif %}
+                </div>
+            </div>
+            {% endform %}
+            <div class="accordion mt-4" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            {{ 'general.products.ingredients' | t }}
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body px-0">
+                            {{product.metafields.custom.ingredients.value}}
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            {{ 'general.products.how-to-use' | t }}
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body px-0">
+                            {{product.metafields.custom.how_to_use.value}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% render 'social-media' %}
+        </div>
+    </div>
+</section>
+{% comment %} {% endif %} {% endcomment %}
+
+<script>
+    document.getElementById('product-variant').addEventListener('change', function() {
+        var variantId = this.value;
+        var variantPrice = null;
+
+        {% for variant in product.variants %}
+            if ("{{ variant.id }}" === variantId) {
+                variantPrice = {{ variant.price | money }};
+            }
+        {% endfor %}
+
+        if (variantPrice !== null) {
+            // Update elemen harga di halaman (misalnya dengan id "price")
+            // document.getElementById('price').innerText = 'Harga: ' + variantPrice;
+            console.log(variantPrice);
+            
+        }
+    });
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const variantSelect = document.getElementById("product-variant");
+    const priceDisplay = document.getElementById("product-price");
+
+    variantSelect.addEventListener("change", function() {
+        // Ambil harga dari opsi yang dipilih
+        const selectedOption = variantSelect.options[variantSelect.selectedIndex];
+        const selectedPrice = selectedOption.getAttribute("data-price");
+
+        // Update tampilan harga
+        priceDisplay.textContent = selectedPrice;
+    });
+
+    const excerptElement = document.getElementById('excerpt');
+    const toggleBtn = document.getElementById('toggle-btn');
+
+    // Ambil teks lengkap
+    const fullText = excerptElement.textContent.trim();
+
+    // Potong teks menjadi 20 kata
+    const words = fullText.split(' ');
+    const previewText = words.slice(0, 20).join(' ');
+    const remainingText = words.length > 20 ? words.slice(20).join(' ') : '';
+
+    // Tampilkan pratinjau
+    excerptElement.innerHTML = `${previewText}${remainingText ? '<span id="dots">...</span><span id="more-text"> ' + remainingText + '</span>' : ''}`;
+
+    // Ambil elemen tambahan
+    const dots = document.getElementById('dots');
+    const moreText = document.getElementById('more-text');
+
+    // Tambahkan event listener ke tombol
+    toggleBtn.addEventListener('click', (e) => {
+        e.preventDefault(); // Mencegah reload halaman
+
+        if (dots && moreText) {
+            if (moreText.classList.contains('visible')) {
+                // Sembunyikan teks tambahan
+                moreText.classList.remove('visible');
+                dots.style.display = 'inline';
+                toggleBtn.textContent = 'Read more';
+            } else {
+                // Tampilkan teks tambahan
+                moreText.classList.add('visible');
+                dots.style.display = 'none';
+                toggleBtn.textContent = 'Read less';
+            }
+        }
+    });
+});
+
+
+</script>
+
+{% schema %}
+{
+    "name": "Main Product",
+    "blocks": [
+        {
+            "type": "@app"
+        },
+        {
+            "type": "title",
+            "name": "t:sections.main-product.blocks.title.name",
+            "limit": 1
+        }
+    ],
+    "settings": [],
+    "presets": [
+        {
+            "name": "main-product"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,25 @@
+<section class="container py-5">
+    <div class="row">
+        <div class="col-12 page-title">
+            {% render 'breadcrumb-custom', title:article.title %}
+        </div>
+        <div class="col-12 mt-4">
+            <h1 class="text-title">{{ article.title }}</h1>
+            <span class="text-date pt-2">{{ article.published_at | date: "%B %d, %Y" }}</span>
+        </div>
+        <div class="col-12 mt-4">
+            {{ article.content }}
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name": "main-article",
+    "settings": [],
+    "presets": [
+        {
+            "name": "main-article"
+        }
+    ]
+}
+{% endschema %}

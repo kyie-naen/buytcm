@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-md-7">
+        <h5 class="mb-4">{{ 'general.account.your-profile' | t }}</h5>
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <label for="">First Name</label>
+                <input type="text" disabled name="customer[first_name]" class="form-control py-3" value="{{ customer.first_name }}">
+            </div>
+            <div class="col-md-6">
+                <label for="">Last Name</label>
+                <input type="text" disabled name="customer[last_name]" class="form-control py-3" value="{{ customer.last_name }}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="">Email</label>
+                <input type="email" disabled name="customer[email]" disabled class="form-control py-3" value="{{ customer.email }}">
+            </div>
+            <div class="col-md-6">
+                <label for="">Phone Number</label>
+                <input type="tel" name="customer[phone]" disabled class="form-control py-3" value="{{ customer.phone }}">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+        {% if customer.default_address %}
+            <h5 class="mb-4">{{ 'general.account.address' | t }}</h5>
+            <p>{{ customer.default_address.address1 }}</p>
+          
+            {% if customer.default_address.address2 != blank %}
+              <p>{{ customer.default_address.address2 }}</p>
+            {% endif %}
+          
+            <p>{{ customer.default_address.city }}, {% if customer.default_address.province_code %}{{ customer.default_address.province_code }}{% endif %}, {{ customer.default_address.country_code }}
+            <p>{{ customer.default_address.zip_code }}</p>
+            <p>{{ customer.default_address.phone }}</p>
+        {% endif %}
+    </div>
+</div>

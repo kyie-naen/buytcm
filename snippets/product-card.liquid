@@ -1,0 +1,47 @@
+{% unless product.tags contains 'b2b' %}
+<div class="card position-relative productcard bg-card ">
+    {% form 'product', product %}
+    <input type="hidden" name="qty" value="1" />
+    <div class="img-zoom card-body-top-border-radius">
+        <img loading="lazy" class="img-fluid" src="{{ image | img_url: 'grande' }}" alt="{{title}}" srcset="{{ image | img_url: '320x320' }} 320w, {{ image | img_url: '480x480' }} 480w, {{ image | img_url: '800x800' }} 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"/>
+    </div>
+    <div class="card-body py-3 d-flex flex-column justify-content-between">
+        <div class="text-product mt-auto">
+            <a href="{{url}}"><p class="card-product-name mb-0">{{title}}</p></a>
+            <p class="card-text">{{price | money}}</p>
+        </div>
+        <div class="d-flex gap-2 mt-2 d-none d-md-flex">
+            <select name="id" class="select-collection">
+                {% for variant in product.variants %}
+                <option value="{{variant.id}}" data-price="{{ variant.price | money }}">{{ variant.title }}</option>
+                {% endfor %}
+            </select>
+            {% if customer == null %}
+                <a href="{{routes.account_login_url}}" class="add-to-cart text-white">
+                    {% render 'icon-add-to-cart' %}
+                </a>
+            {% else %}
+                <button type="submit" class="add-to-cart">
+                    {% render 'icon-add-to-cart' %}
+                </button>  
+            {% endif %}
+        </div>
+    </div>
+{% endform %}
+</div>
+
+            
+{% endunless %}
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                
+            </div>
+        </div>
+    </div>
+</div>

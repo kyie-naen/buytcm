@@ -1,0 +1,248 @@
+{
+    "general": {
+        "all": {
+            "about-us": "關於我們",
+            "quick-view": "快速檢視",
+            "sign-up": "註冊",
+            "home": "首頁"
+        },
+        "register": {
+            "text": "註冊",
+            "create-account": "建立帳戶",
+            "subtitle-create-account": "解鎖量身打造的精彩體驗。註冊快速又簡單，立即獲取專屬會員福利。"
+        },
+        "reset-password": {
+            "text": "重設密碼",
+            "sub-title": "請輸入您的新密碼",
+            "button": "更改密碼",
+            "enter-new-password": "輸入新密碼",
+            "confirm-your-password": "請確認您的密碼以繼續"
+        },
+        "login": {
+            "text": "帳戶",
+            "login": "登入",
+            "subtitle-login": "透過今日登入，解鎖便利與量身打造的精彩體驗。您的旅程從這裡開始。"
+        },
+        "account": {
+            "title": "歡迎 {{ name }}!",
+            "account-details": "帳戶詳情",
+            "no-order-history": "您尚未下任何訂單",
+            "start-shopping": "開始購物",
+            "order-history": "訂單歷史",
+            "order-id": "訂單編號",
+            "date": "日期",
+            "tracking-number": "追踪編號",
+            "order-status": "訂單狀態",
+            "address": "您的地址",
+            "your-profile": "您的個人檔案",
+            "total": "總計"
+        },
+        "index": {
+            "heritage-text": "傳統中醫文化",
+            "heritage-subtext-1-1": "歡迎來到 BuyTCM，您值得信賴的中醫藥電子藥房。在 BuyTCM，我們精心挑選高品質的產品，為全球的中醫師及其患者提供支持。",
+            "heritage-subtext-1-2": "我們以全球化的視野運營，無論您身在何處，都能為您連接高效的藥物、創新的工具和可靠的資源。我們的電子藥房旨在簡化您的診療過程並提升患者的護理品質，幫助您輕鬆提供最佳解決方案。",
+            "heritage-subtext-1-3": "立即與我們一起開啟您的旅程——因為更好的支持是提供更佳護理的起點。",
+            "heritage-text-one": "針對企業客戶",
+            "heritage-subtext-one": "認識到健康與養生領域企業的獨特需求，我們提供強大的B2B服務。無論您經營的是小型健康食品店、大型零售連鎖，還是醫療診所，我們的企業對企業解決方案都能根據您的特定需求量身定制。",
+            "heritage-text-two": "我們對品質與安全的承諾",
+            "heritage-subtext-two": "品質是我們一切工作的核心。我們確保所有產品都符合嚴格的品質控制標準，並來自可靠的供應商。安全至關重要，我們不遺餘力地確保我們銷售的所有產品都是安全、有效且品質卓越的。",
+            "heritage-text-three": "可持續性與倫理",
+            "heritage-subtext-three": "可持續性和倫理實踐是我們運營的基礎。我們致力於通過像是環保包裝和支持可持續農業方法等措施，來減少我們對環境的影響。",
+            "best-product-text": "最佳產品銷售商",
+            "best-product-subtext": "發現一系列量身定制的護膚解決方案，專為滿足您的特定需求而設計。",
+            "best-product-button": "所有產品",
+            "newest-text": "傳統中醫文化",
+            "newest-subtext": "我們精心策劃的網站展示了一系列獨特且有效的天然補充品。每一款產品，特別是我們的傳統中醫和草本萃取物，均來自天然草本萃取，體現了大自然治療效益的精髓。我們獨特的健康理念根植於傳統醫學的整體原則，通過將大自然的滋養精髓與現代科學方法結合，優化身心健康。",
+            "founder-who": "阮是什麼人",
+            "founder-text": "創辦人",
+            "founder-details": "張賢哲先生是中國醫藥大學中醫學系的教授。佇雲林縣溪頭鄉出世，伊畢業於中國醫藥大學藥學系。服兵役後，伊返校擔任助理教授、講師、副教授，直到升做教授。",
+            "blog-text": "健康美麗的秘訣"
+        },
+        "products": {
+          "add-to-cart": "將商品加入購物車"  ,
+          "ingredients": "成分",
+          "how-to-use": "使用方法",
+          "you-also-like": "您也喜歡"
+        },
+        "cart": {
+            "cart-text": "購物車",
+            "item": "項目",
+            "subtotal": "小計",
+            "no-item": "購物車中沒有項目",
+            "text-tax": "稅金和運費將在結帳時計算",
+            "view-cart": "查看購物車"
+        },
+        "checkout": {
+            "shopping-cart": "購物車",
+            "product": "產品",
+            "price": "價格",
+            "qty": "數量",
+            "total": "總計",
+            "subtotal": "小計",
+            "checkout": "結帳"
+        },
+        "footer": {
+            "coloumn-text-one": "幫助顧客",
+            "coloumn-subtext-one_html": "揣一個離你最近的位置，減少運費，<br>讓購物變得更方便。",
+            "coloumn-text-two": "阮的公司",
+            "coloumn-text-three": "發現",
+            "coloumn-text-four": "專屬的福利",
+            "coloumn-subtext-four_html": "註冊即可享有首次購物九折優惠並免運費。<br>隨時更新促銷與優惠資訊。"
+        }
+    },
+    "page": {
+        "about-us": {
+            "title": "關於我們",
+            "description": "張憲哲先生是中國醫藥大學中醫系的教授。他出生於雲林縣茨投鄉，畢業於中國醫藥大學藥學系。完成軍事服役後，他回到母校，先後擔任助理教授、講師、副教授，最終成為教授。",
+            "sub-title": "我們的歷史",
+            "sub-title-2": "我們的使命",
+            "sub-title-3": "我們是誰 / 核心價值觀",
+            "sub-title-4": "是什麼讓 BuyTCM 與眾不同",
+            "paragraph-1": "黃河與洛河是中華民族最早的興起與繁榮之地；來自洛陽的‘河圖’與‘洛書’是中國古代文明與文化最早的經典與來源。台灣人民的傳承與堅守‘河洛’理念，其實源於黃河與洛河地區的‘河洛’人，而非‘福建’或‘閩南’人。流傳下來的語言是‘河洛話’。隨著朝代更迭與世代變遷，以及五胡亂華時期南遷的影響，這些傳統來到了台灣。在敬畏歷史的精神下，代代相傳，傳統中藥的挑選、分級、書寫與炮製等正統技藝已經保存了兩千多年。這份傳承保持了中華文化傳統的純粹精髓，不受時間或政治局勢的影響而改變。",
+            "paragraph-2-1": "BuyTCM 致力於成為值得信賴的合作夥伴，為全球中醫師提供堅定的支持。我們的使命是賦能中醫從業者，提供他們所需的工具、資源和創新，幫助他們為患者提供卓越的醫療服務，並實現卓越的治療效果。",
+            "paragraph-2-2": "我們專注於尋找最佳解決方案，並不斷創新以滿足現代中醫實踐不斷演變的需求。我們攜手合作，幫助中醫從業者在服務患者的過程中創造有意義的改變。",
+            "paragraph-3-1": "BuyTCM 是一家綜合性電子藥房，致力於賦能中醫從業者和針灸師。我們提供一個無縫的解決方案，用於開立和配發最佳的中醫藥產品，讓專業人士更專注於患者的護理。",
+            "paragraph-3-2": "植根於深厚的傳統，我們的創始人來自一個擁有數代中醫經驗的家庭。這份傳承塑造了我們的一切，確保我們的電子藥房秉持真實性、精確性與創新的原則。",
+            "paragraph-3-3": "對於沒有藥師或空間儲存藥材的中醫師，BuyTCM 簡化了這個過程。您只需將處方發送給我們，我們將處理從配方組裝到直接送達患者的所有事宜。憑藉我們的資源，專業人士甚至可以根據患者的需求創建量身定制的配方。",
+            "paragraph-4": "在 BuyTCM，我們的產品與傳統中醫市場上的任何其他產品都不同。以下是原因：",
+            "list-4-1-title": "無與倫比的效力",
+            "list-4-2-title": "創新的片劑配方",
+            "list-4-3-title": "純粹成分，無添加劑",
+            "list-4-1-text": "Eefooton 和 Meritup 是全球唯一不經稀釋的中醫藥品。許多產品因為稀釋而效果減弱，而我們的配方採用了先進的方法，從中提取最有效的成分，這些方法受到西醫原則的啟發。結果是？在 2-3 天內即可見到明顯的效果，徹底顛覆了中醫治療的傳統時間表。",
+            "list-4-2-text": "與傳統的粉末藥物不同，傳統粉末藥物常常苦澀、凌亂且不方便使用，我們的片劑提供了一個現代化的解決方案。它們無味，讓吞服更加輕鬆，不會有苦澀感，而且緊湊的設計使它們易於攜帶。每片片劑精確測量為340毫克，確保準確劑量。片劑還能比粉末更好地保持品質，通過最小化與空氣的接觸，保持成分的新鮮與效果。",
+            "list-4-3-text": "我們的製造過程在每一個步驟中都優先考慮純度與品質。我們避免使用像玉米澱粉這樣的多餘填充物，這些填充物在其他中醫產品中常見。相反，我們僅使用配方中已有的草藥和根部，確保活性成分的最高濃度。通過最小化添加劑，如甜味劑和澱粉，我們保持產品的完整性與效能，這對於支持患者健康至關重要。",
+        },
+        "shipping": {
+            "title": "Shipping and Return Policy",
+            "description": "Thank you for choosing BuyTCM! This Shipping and Return Policy outlines our practices regarding the shipment and return of our products. By purchasing from BuyTCM, you agree to this policy. Please review it carefully.",
+            "sub-title-1": "Shipping Policy",
+            "sub-title-2": "Return Policy",
+            "sub-title-3": "Return Process",
+            "sub-title-4": "Refunds",
+            "paragraph-1-1": "BuyTCM ships orders worldwide. We aim to process and dispatch orders within 1-3 business days after payment is confirmed.",
+            "paragraph-1-2": "Shipping options and costs are calculated at checkout based on your location, the size of your order, and the selected shipping method. Delivery times vary depending on the destination and may be affected by customs processing, carrier delays, or other factors beyond our control. Once your order is shipped, you will receive a confirmation email with tracking details to monitor the delivery status.",
+            "paragraph-1-3": "International buyers are responsible for any customs duties, taxes, or import fees required by their local jurisdiction. BuyTCM is not liable for delays or additional charges incurred during customs processing.",
+            "paragraph-2-1": "We accept returns for unopened and unused products within 30 days of delivery. If your order arrives damaged or defective, please contact us within 7 days of delivery. We recommend that you take an unboxing video when opening your package to document its condition, as this can help facilitate the return process if needed.",
+            "paragraph-2-2": "Exchanges are not currently offered. If you need a different product, please initiate a return for the original item and place a new order.",
+            "paragraph-3-1": "At BuyTCM, we strive to ensure your satisfaction with every purchase. If you need to return an item for any reason, please follow the steps below to initiate a return.",
+            "paragraph-3-1-1": "Step 1: Check Eligibility for a Return",
+            "list-3-1-1": "Returns must be initiated within 30 days of receiving your order.",
+            "list-3-1-2": "Items must be in original condition, unused, and in original packaging.",
+            "list-3-1-3": "Products marked as final sale or non-returnable cannot be returned.",
+            "paragraph-3-2-1": "Step 2: Prepare Your Return Request",
+            "list-3-2-1": "Always remember to record an unboxing video as part of your return claim. The video must clearly show the sealed package being opened and the item(s) with any discrepancies or damage.",
+            "list-3-2-2": "Ensure you have your order number and proof of purchase.",
+            "paragraph-3-3-1": "Step 3: Submit Your Return Request",
+            "list-3-3-1": "Visit Returns page and fill out the return form.",
+            "list-3-3-2": "Upload your unboxing video and any supporting evidence (e.g., photographs of damaged or incorrect items).",
+            "list-3-3-3": "Once your request is approved, you will receive a Return Merchandise Authorization (RMA) number.",
+            "paragraph-3-4-1": "Step 4: Ship the Item(s) Back",
+            "list-3-4-1": "Package the item(s) securely to avoid damage during transit.",
+            "list-3-4-2": "Include your RMA number in the shipment.",
+            "list-3-4-3": "Ship your return to the address provided in your RMA approval email. Customers are responsible for all return shipping fees, including any applicable taxes, duties, or customs charges.",
+            "paragraph-3-5-1": "Step 5: Receive Your Refund or Replacement",
+            "list-3-5-1": "Once your return is received and inspected, we will notify you of the approval or rejection of your refund or replacement.",
+            "list-3-5-2": "Approved refunds will be issued to your original payment method within 7-14 business days.",
+            "list-3-5-3": "Returns that do not meet the criteria above may be subject to partial refunds or rejection.",
+            "list-3-5-4": "For any questions or assistance, please contact our customer support team at info@buytcm.com.",
+            "paragraph-4-1": "Your request will be processed once the returned item has been received and inspected or once your refund claim has been approved. Refunds will be issued to the original payment method used during the purchase, such as a credit card, PayPal, or other payment services. Please note that refunds may take 7-10 business days to reflect in your account after approval, depending on your payment provider.",
+            "paragraph-4-2": "Customers are responsible for all return shipping fees, as well as any applicable duties, taxes, or customs charges.",
+            "paragraph-4-3": "If you have any questions or concerns about your refund, we’re here to help—reach out to us at info@buytcm.com, and our customer support team will be happy to assist you!"
+        },
+        "contact": {
+            "title": "聯絡我們",
+            "description": "感謝您選擇 BuyTCM。我們隨時為您解答任何問題或疑慮。無論您需要幫助處理訂單、產品查詢或處方協助，我們的團隊都準備好為您提供所需的支持。",
+            "subtitle": "如何聯繫我們",
+            "subtitle-text": "我們的專屬客服團隊隨時為您提供協助。請發送訊息給我們以獲得支援或詢問，我們會盡快回覆您。",
+            "first-name": "您的名字",
+            "last-name": "您的姓氏",
+            "email": "您的電子郵件地址",
+            "message": "您的訊息",
+            "send": "發送"
+        },
+        "privacy": {
+            "title": "Privacy Policy",
+            "description": "Welcome to BuyTCM! We are committed to protecting your privacy while providing the best possible service. This Privacy Policy explains how we collect, use, and safeguard your personal information so that you can feel confident shopping with us",
+            "sub-title": "Please Read Carefully",
+            "sub-title-1": "Who is it for?",
+            "paragraph-1": "This Privacy Policy applies to all visitors, customers, and users of the BuyTCM website. Whether you’re browsing our site, creating an account, or making a purchase, this policy outlines how your personal information is handled. <br> You can always find the latest version of our Privacy Policy on our website. If you're subscribed to our newsletter, we'll notify you via email about any updates to our Privacy Policy.",
+            "sub-title-2": "What data is collected?",
+            "paragraph-2": "At BuyTCM, we collect information to streamline your shopping experience and make it even more enjoyable. This includes details like your name, email address, shipping address, and payment information when you place an order. We may also gather information about how you use our website, such as pages you visit or items you add to your cart, to improve our website, personalize your experience, and share updates or special offers you might like. We also collect certain details to comply with legal obligations, like keeping accurate records or preventing fraud. Rest assured, we only collect what’s necessary and always handle your information with care.",
+            "sub-title-3": "What data is shared?",
+            "paragraph-3": "We only share your personal information with trusted third parties when it’s necessary to provide our services. For example, we may share your shipping address with delivery companies to ensure your order arrives on time, or your payment details with secure payment processors to complete your purchase. In some cases, we may need to share information to comply with legal requirements or prevent fraud. However, we want to be clear—your data is never sold or rented. Our priority is protecting your privacy while ensuring a seamless shopping experience.",
+            "sub-title-4": "How is data protected?",
+            "paragraph-4": "Protecting your personal information is a top priority at BuyTCM. We use industry-standard security measures, such as encryption and secure servers, to keep your data safe from unauthorized access. Access to your data is strictly limited to team members and trusted partners who need it to provide our services. To stay ahead of potential risks, we regularly review and update our data protection practices to ensure we’re using the best security methods available. <br> We store your data securely for as long as necessary to provide our services and comply with legal requirements. If you request the deletion of your data, or if it's no longer needed for our purposes, we will remove it in a safe and timely manner.",
+            "sub-title-5": "What can I do with my data?",
+            "paragraph-5": "You have full control over your data. You can request a copy of the information we have about you to review and update it at any time. If you prefer that we no longer keep your data, we can delete it upon request. You can opt out of marketing communications whenever you like by updating your preferences or contacting us directly. We’re here to support your rights and ensure simple and transparent data management.",
+            "sub-title-6": "What about cookies?",
+            "paragraph-6": "We use cookies and tracking technologies to improve your experience on our website. They help us remember your preferences, keep track of items in your cart, and analyze how our site is being used so we can make it better. You have complete control over cookies and can adjust your settings anytime through your browser. We respect your choices and aim to provide a smooth and personalized shopping experience.",
+            "sub-title-7": "How are international users protected?",
+            "paragraph-7": "We are committed to providing you with the best data protection, no matter where you are in the world. We ensure that your data is handled in accordance with local and international data protection laws. As we are based in New York, USA, we comply with United States data protection laws and relevant international laws. We follow strict security measures to protect your information during storage and transfer, including using encryption and secure servers, in compliance with all applicable privacy regulations.",
+            "sub-title-8": "How are minors protected?",
+            "paragraph-8": "We take the privacy and safety of minors seriously. Our products are not intended for purchase by children, and we require that users under the age of 18 use our website with the involvement of a parent or guardian. If you are a minor, your guardian should be actively involved in managing your account and overseeing any transaction to safeguard your privacy while using our site.",
+            "sub-title-9": "Who can I contact if I have further questions?",
+            "paragraph-9": "If you have any questions or concerns, feel free to reach out to us at info@buytcm.com and we'll be happy to assist you. Our team is here to ensure your safe and pleasant shopping experience with BuyTCM."
+        },
+        "webinar": {
+            "nephrologist": {
+                "title": "Join the Leading Experts: A Webinar on the Latest Advances in Renal Health",
+                "description": "Connect directly with the researchers behind the latest clinical trials in renal health. Get your questions answered in real-time and gain valuable insights into cutting-edge treatments and developments.",
+            }
+        },
+        "term-service": {
+            "title": "服務條款",
+            "description": "歡迎來到 BuyTCM！本服務條款（以下稱「條款」）規範您使用我們的網站、產品及服務。透過訪問或使用 BuyTCM 的網站或購買我們的產品，即表示您同意遵守本條款。請仔細閱讀。",
+            "sub-title-1": "介紹",
+            "paragraph-1": "BuyTCM 是一家總部位於美國的公司，銷售天然護膚產品和保健品至全球各地。我們的運營遵守適用的美國法律及相關國際法律。使用我們的網站即表示您確認在您的司法管轄區內，您有合法資格這樣做。",
+            "sub-title-2": "資格",
+            "paragraph-2": "您必須年滿 18 歲或達到您所在司法管轄區的法定成年年齡，才能使用我們的網站或購買我們的產品。同意本條款即表示您確認符合此年齡要求。",
+            "sub-title-3": "產品資訊與使用",
+            "paragraph-3-1": "All products sold on the BuyTCM website are intended for use by trained professionals in Traditional Chinese Medicine (TCM). Individuals wishing to purchase the products should do so only following a consultation with a qualified TCM doctor. For a convenient online consultation with a TCM professional, you can schedule an appointment by visiting Doctors ASAP.",
+            "paragraph-3-2": "We strive to provide accurate product descriptions and information, but we do not guarantee that the information is error-free. Always consult with your healthcare provider before using supplements or skincare products or if you have any medical conditions or concerns.",
+            "sub-title-4": "訂單與付款",
+            "paragraph-4-1": "All orders placed on our website are subject to acceptance. We reserve the right to cancel or refuse any order for any reason. Prices are listed in U.S. dollars unless otherwise specified. We reserve the right to change prices at any time without notice. We accept major credit cards and other payment methods listed at checkout. Buyers are responsible for any applicable taxes, duties, or fees required by their local jurisdiction. We will promptly process and ship your order as soon as your payment is successfully received.",
+            "paragraph-4-2": "You can learn more about our shipping, delivery, and return policies here.",
+            "sub-title-5": "運送與交付",
+            "paragraph-5-1": "We ship worldwide. Delivery times vary depending on your location. While we strive to meet estimated delivery times, we are not liable for delays caused by customs, carriers, or other factors beyond our control. International buyers are responsible for any customs or import duties incurred upon delivery.",
+            "paragraph-5-2": "Please be aware that some of our products contain ingredients that may be regarded as medicine or may be regulated in certain countries. We strongly recommend checking with your local customs agency to ensure compliance with your country's import regulations. Please note that we are not specialists in customs brokerage and are not qualified to offer guidance on these matters. If your local customs office is unable to provide clear information regarding the importability of our products, you may consider placing a small order at your own discretion. However, please be aware that we cannot accept responsibility if the order fails to arrive due to customs or import restrictions.",
+            "sub-title-6": "退貨與退款",
+            "paragraph-6": "We accept returns for unopened and unused products within 30 days of delivery. To initiate a return, please refer to our Shipping and Return page.",
+            "sub-title-7": "知識產權",
+            "paragraph-7": "All content on the BuyTCM website, including but not limited to text, images, logos, and product descriptions, is the property of BuyTCM or its licensors and is protected by intellectual property laws. Unauthorized use of our content is prohibited.",
+            "sub-title-8": "用戶行為",
+            "paragraph-8": "By using our website, you agree not to:",
+            "paragraph-8-1": "Violate any applicable laws or regulations.",
+            "paragraph-8-2": "Use the website for fraudulent or malicious purposes.",
+            "paragraph-8-3": "Interfere with the security or functionality of the website.",
+            "paragraph-8-4": "Provide false or misleading information.",
+            "sub-title-9": "免責聲明",
+            "paragraph-9-1": "BuyTCM provides its website and products on an \"as is\" and \"as available\" basis. To the maximum extent permitted by law, we disclaim all warranties, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement.",
+            "paragraph-9-2": "All product descriptions on the BuyTCM website are sourced from the official Taiwan Herbal Pharmacopeia 4th edition. It serves as the national standard for herb inspection and quality control in Taiwan. This government-issued pharmacopeia provides the foundation for the quality assurance of Chinese medicines. The herbs and other natural ingredients used in our products are sourced and produced in Taiwan. Please note that the descriptions are intended solely as a reference for qualified professionals and are not meant for self-diagnosis or product selection without prior consultation with a healthcare provider. We strongly recommend consulting a qualified medical professional before purchasing any therapeutic products. Should you choose not to do so, you accept full responsibility for any potential health consequences, and BuyTCM will not be held liable. ",
+            "paragraph-9-3": "For convenient online diagnostic services, you may visit dasap.com or consult any other qualified healthcare provider specializing in Traditional Chinese Medicine (TCM).",
+            "sub-title-10": "責任限制",
+            "paragraph-10": "To the fullest extent permitted by law, BuyTCM shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of our website or products. Our total liability is limited to the amount paid for the product that gave rise to the claim.",
+            "sub-title-11": "適用法律",
+            "paragraph-11": "These Terms are governed by the laws of the State of New York, USA. Any disputes arising from these Terms or your use of the website will be resolved in the courts located in New York, USA.",
+            "sub-title-12": "國際使用",
+            "paragraph-12": "While BuyTCM sells products worldwide, we make no representation that our website or products are appropriate or available for use in every location. Users are responsible for compliance with local laws.",
+            "sub-title-13": "隱私政策",
+            "paragraph-13": "Our Privacy Policy, which outlines how we collect, use, and protect your personal information, is incorporated by reference into these Terms. By using our website, you also agree to our Privacy Policy.",
+            "sub-title-14": "條款變更",
+            "paragraph-14": "We reserve the right to update or modify these Terms at any time. Changes will take effect upon posting to the website. Your continued use of the website after changes are posted constitutes your acceptance of the updated Terms.",
+            "sub-title-15": "聯繫信息",
+            "paragraph-15": "If you have any questions or concerns about these Terms, please contact us: Email: info@buytcm.com"
+        }
+    },
+    "sections": {
+        "hero-slider": {
+            "settings": {
+                "text1": {
+                    "default": "健康與美容必需品，讓你看起來美麗又感覺舒適"
+                },
+                "textbutton1": {
+                    "default": "查看系列"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-lg-2 slider slider-nav d-none d-sm-block">
+        {% for image in product.images %}
+            <img loading="lazy" class="img-track" src="{{ image.src | img_url: 'grande' }}" alt="{{product.featured_image.alt}}" srcset="{{ image.src | img_url: '320x320' }} 320w, {{ image.src | img_url: '480x480' }} 480w, {{ image.src | img_url: '800x800' }} 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" />
+        {% endfor %}
+    </div>
+    <div class="col-lg-10 slider slider-for">
+        {% for image in product.images %}
+            <img loading="lazy" class="img-fluid" src="{{ image.src | img_url: 'grande' }}" alt="{{product.featured_image.alt}}" srcset="{{ image.src | img_url: '320x320' }} 320w, {{ image.src | img_url: '480x480' }} 480w, {{ image.src | img_url: '800x800' }} 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"/>
+        {% endfor %}
+    </div>
+</div>
